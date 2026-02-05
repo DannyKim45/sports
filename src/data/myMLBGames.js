@@ -110,32 +110,51 @@ Aaron Judge의 홈런에 구장이 흔들릴 정도로 열광하는 모습을 �
   },
   {
     id: 3,
-    date: "2024-05-20",
+    date: "2016-06-25",
     homeTeam: {
       name: "Seattle Mariners",
       abbrev: "SEA",
       logo: "https://www.mlbstatic.com/team-logos/136.svg"
     },
     awayTeam: {
-      name: "Texas Rangers",
-      abbrev: "TEX",
-      logo: "https://www.mlbstatic.com/team-logos/140.svg"
+      name: "St. Louis Cardinals",
+      abbrev: "STL",
+      logo: "https://www.mlbstatic.com/team-logos/138.svg"
     },
-    score: { home: 5, away: 3 },
-    venue: "T-Mobile Park, Seattle",
-    section: "Lower Box 127",
-    coverImage: "/images/ohtani.jpg",
-    images: ["/images/ohtani.jpg", "/images/ohtani.jpg"],
-    videos: [],
-    story: `시애틀 매리너스 경기 관람`,
-    highlights: ["T-Mobile Park 분위기", "시애틀 경치"],
+    score: { home: 5, away: 4 },
+    venue: "Safeco Field, Seattle",
+    section: "",
+    coverImage: "/images/mlb-games/mariners-game1-cover.jpg",
+    images: [
+      "/images/mlb-games/mariners-game1-1.jpg",
+      "/images/mlb-games/mariners-game1-2.jpg",
+      "/images/mlb-games/mariners-game1-3.jpg",
+      "/images/mlb-games/mariners-game1-4.jpg",
+      "/images/mlb-games/mariners-game1-5.jpg",
+      "/images/mlb-games/mariners-game1-6.jpg",
+      "/images/mlb-games/mariners-game1-7.jpg",
+      "/images/mlb-games/mariners-game1-8.jpg",
+      "/images/mlb-games/mariners-game1-9.jpg"
+    ],
+    videos: [
+      "/videos/mlb-games/mariners-game1.mp4",
+      "/videos/mlb-games/mariners-game2.mp4"
+    ],
+    story: `2016년 시애틀 여행 중 Safeco Field에서 매리너스와 카디널스의 접전을 관람했습니다.
+매리너스가 5-4로 극적인 승리를 거둔 경기였습니다.
+시애틀의 아름다운 야구장에서 펼쳐진 박진감 넘치는 경기를 직접 관람하는 특별한 경험이었습니다.`,
+    highlights: [
+      "매리너스의 5-4 역전승",
+      "Safeco Field의 멋진 분위기",
+      "시애틀 여행의 하이라이트"
+    ],
     mood: "⚾",
     weather: "맑음",
-    withWhom: "친구들",
+    withWhom: "",
     foodAndDrink: "Garlic Fries",
     memorableQuote: "Go Mariners!",
-    pitchers: { home: "Luis Castillo", away: "Nathan Eovaldi" },
-    attendance: "42,000명"
+    pitchers: { home: "TBD", away: "TBD" },
+    attendance: ""
   },
   {
     id: 4,

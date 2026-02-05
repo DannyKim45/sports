@@ -1,7 +1,5 @@
-// Use proxy in development to avoid CORS issues
-const NHL_API_BASE = import.meta.env.DEV
-  ? "/api/nhl"
-  : "https://api-web.nhle.com/v1";
+// Always use proxy to avoid CORS issues (NHL API doesn't allow direct browser access)
+const NHL_API_BASE = "/api/nhl";
 
 /**
  * Retry helper function

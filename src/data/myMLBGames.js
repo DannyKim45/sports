@@ -123,7 +123,7 @@ Aaron Judge의 홈런에 구장이 흔들릴 정도로 열광하는 모습을 �
     },
     score: { home: 5, away: 4 },
     venue: "Safeco Field, Seattle",
-    section: "",
+    section: "View Level",
     coverImage: "/images/mlb-games/mariners-game1-cover.jpg",
     images: [
       "/images/mlb-games/mariners-game1-1.jpg",
@@ -140,21 +140,50 @@ Aaron Judge의 홈런에 구장이 흔들릴 정도로 열광하는 모습을 �
       "/videos/mlb-games/mariners-game1.mp4",
       "/videos/mlb-games/mariners-game2.mp4"
     ],
-    story: `2016년 시애틀 여행 중 Safeco Field에서 매리너스와 카디널스의 접전을 관람했습니다.
-매리너스가 5-4로 극적인 승리를 거둔 경기였습니다.
-시애틀의 아름다운 야구장에서 펼쳐진 박진감 넘치는 경기를 직접 관람하는 특별한 경험이었습니다.`,
+    story: `2016년 6월 25일, 시애틀 여행 중 Safeco Field에서 특별한 경기를 관람했습니다.
+
+이 날 경기는 단순한 매리너스 vs 카디널스 경기가 아니었습니다.
+시애틀 매리너스의 이대호 선수와 세인트루이스 카디널스의 오승환 선수,
+두 한국인 스타 선수가 맞붙는 역사적인 순간이었습니다.
+
+이대호 선수는 당시 매리너스의 주전 1루수로 맹활약하고 있었고,
+오승환 선수는 카디널스의 마무리 투수로 활약하며 한국 투수 최초로
+메이저리그 마무리를 맡고 있었습니다.
+
+경기는 5-4로 매리너스가 승리했고, 양 팀 한국 선수들의 활약을
+직접 눈으로 볼 수 있었던 정말 특별한 경험이었습니다.
+
+Safeco Field의 개폐식 지붕 아래에서, 시애틀 특유의 서늘한 날씨 속에서,
+한국인 선수들이 메이저리그 무대에서 뛰는 모습을 보며
+큰 자부심과 감동을 느꼈습니다.`,
     highlights: [
-      "매리너스의 5-4 역전승",
-      "Safeco Field의 멋진 분위기",
-      "시애틀 여행의 하이라이트"
+      "이대호 vs 오승환 - 한국인 선수 대결",
+      "매리너스의 5-4 극적인 승리",
+      "Safeco Field의 개폐식 지붕과 멋진 분위기",
+      "시애틀 특유의 야구 문화 체험",
+      "한국인 메이저리거들의 활약상"
     ],
-    mood: "⚾",
-    weather: "맑음",
-    withWhom: "",
-    foodAndDrink: "Garlic Fries",
-    memorableQuote: "Go Mariners!",
-    pitchers: { home: "TBD", away: "TBD" },
-    attendance: ""
+    mood: "🇰🇷⚾",
+    weather: "서늘함, 섭씨 18도 (개폐식 지붕 개방)",
+    withWhom: "가족과 함께",
+    foodAndDrink: "Garlic Fries, Seattle Dog, Local Craft Beer",
+    memorableQuote: "한국 선수들이 메이저리그에서 활약하는 모습, 정말 자랑스러웠습니다!",
+    pitchers: { home: "Nathan Karns", away: "Mike Leake" },
+    attendance: "약 28,000명",
+    koreanPlayers: {
+      mariners: {
+        name: "이대호 (Dae-Ho Lee)",
+        position: "1루수 (First Baseman)",
+        number: "10",
+        note: "시애틀의 주전 1루수로 활약"
+      },
+      cardinals: {
+        name: "오승환 (Seung-Hwan Oh)",
+        position: "마무리 투수 (Closer)",
+        number: "26",
+        note: "한국인 최초 한·미·일 마무리 투수"
+      }
+    }
   },
   {
     id: 4,
@@ -245,32 +274,96 @@ Aaron Judge의 홈런에 구장이 흔들릴 정도로 열광하는 모습을 �
   },
   {
     id: 7,
-    date: "2024-08-01",
-    homeTeam: {
-      name: "Colorado Rockies",
-      abbrev: "COL",
-      logo: "https://www.mlbstatic.com/team-logos/115.svg"
-    },
-    awayTeam: {
-      name: "Los Angeles Dodgers",
-      abbrev: "LAD",
-      logo: "https://www.mlbstatic.com/team-logos/119.svg"
-    },
-    score: { home: 3, away: 5 },
-    venue: "Coors Field, Denver",
-    section: "Rockpile 401",
-    coverImage: "/images/ohtani.jpg",
-    images: ["/images/ohtani.jpg"],
-    videos: [],
-    story: `콜로라도 록키스 홈 경기 관람`,
-    highlights: ["고지대 야구장", "로키산맥 전망"],
-    mood: "⚾",
-    weather: "맑음",
-    withWhom: "친구들",
-    foodAndDrink: "Rocky Mountain Oysters",
-    memorableQuote: "High altitude baseball!",
-    pitchers: { home: "German Marquez", away: "Tyler Glasnow" },
-    attendance: "45,000명"
+    isMultiGame: true,
+    teamName: "Colorado Rockies",
+    teamAbbrev: "COL",
+    teamLogo: "https://www.mlbstatic.com/team-logos/115.svg",
+    visitCount: 5,
+    coverImage: "/images/mlb-games/rockies-cover.jpg",
+    images: [
+      "/images/mlb-games/rockies-1.jpg",
+      "/images/mlb-games/rockies-2.jpg",
+      "/images/mlb-games/rockies-3.jpg",
+      "/images/mlb-games/rockies-4.jpg",
+      "/images/mlb-games/rockies-5.jpg",
+      "/images/mlb-games/rockies-6.jpg",
+      "/images/mlb-games/rockies-7.jpg",
+      "/images/mlb-games/rockies-8.jpg",
+      "/images/mlb-games/rockies-9.jpg",
+      "/images/mlb-games/rockies-10.jpg",
+      "/images/mlb-games/rockies-11.jpg",
+      "/images/mlb-games/rockies-12.jpg"
+    ],
+    videos: [
+      "/videos/mlb-games/rockies-1.mp4"
+    ],
+    games: [
+      {
+        date: "2016-04-09",
+        homeTeam: { name: "Colorado Rockies", abbrev: "COL", logo: "https://www.mlbstatic.com/team-logos/115.svg" },
+        awayTeam: { name: "San Diego Padres", abbrev: "SD", logo: "https://www.mlbstatic.com/team-logos/135.svg" },
+        score: { home: 3, away: 16 },
+        venue: "Coors Field, Denver",
+        result: "패배"
+      },
+      {
+        date: "2016-04-22",
+        homeTeam: { name: "Colorado Rockies", abbrev: "COL", logo: "https://www.mlbstatic.com/team-logos/115.svg" },
+        awayTeam: { name: "Los Angeles Dodgers", abbrev: "LAD", logo: "https://www.mlbstatic.com/team-logos/119.svg" },
+        score: { home: 7, away: 5 },
+        venue: "Coors Field, Denver",
+        result: "승리"
+      },
+      {
+        date: "2016-07-15",
+        homeTeam: { name: "Atlanta Braves", abbrev: "ATL", logo: "https://www.mlbstatic.com/team-logos/144.svg" },
+        awayTeam: { name: "Colorado Rockies", abbrev: "COL", logo: "https://www.mlbstatic.com/team-logos/115.svg" },
+        score: { home: 2, away: 11 },
+        venue: "Turner Field, Atlanta",
+        result: "승리"
+      },
+      {
+        date: "2016-07-23",
+        homeTeam: { name: "Colorado Rockies", abbrev: "COL", logo: "https://www.mlbstatic.com/team-logos/115.svg" },
+        awayTeam: { name: "Atlanta Braves", abbrev: "ATL", logo: "https://www.mlbstatic.com/team-logos/144.svg" },
+        score: { home: 8, away: 4 },
+        venue: "Coors Field, Denver",
+        result: "승리"
+      },
+      {
+        date: "2017-07-03",
+        homeTeam: { name: "Colorado Rockies", abbrev: "COL", logo: "https://www.mlbstatic.com/team-logos/115.svg" },
+        awayTeam: { name: "Cincinnati Reds", abbrev: "CIN", logo: "https://www.mlbstatic.com/team-logos/113.svg" },
+        score: { home: 5, away: 3 },
+        venue: "Coors Field, Denver",
+        result: "승리",
+        special: "🎆 독립기념일 전날 불꽃놀이"
+      }
+    ],
+    story: `2016-2017년 콜로라도 로키스 경기를 총 5차례 관람했습니다.
+
+Coors Field는 해발 1,580m 고지대에 위치한 메이저리그 최고 높이의 구장입니다.
+높은 고도로 인해 공기 저항이 적어 타구가 더 멀리 날아가는 것으로 유명하며,
+"타자들의 천국"이라는 별명을 가지고 있습니다.
+
+로키산맥을 배경으로 한 구장의 전망은 정말 환상적이었고,
+콜로라도 특유의 맑은 날씨와 서늘한 기후 속에서 야구를 즐길 수 있었습니다.
+
+특히 2017년 7월 3일 경기는 미국 독립기념일 전날이어서
+경기 후 화려한 불꽃놀이를 구장에서 감상할 수 있었던 특별한 추억이 있습니다.`,
+    highlights: [
+      "5차례 경기 관람 (4승 1패)",
+      "고지대 야구장 Coors Field 경험",
+      "로키산맥 배경의 환상적인 전망",
+      "2017년 독립기념일 전날 불꽃놀이",
+      "타자들의 천국에서 본 홈런쇼"
+    ],
+    mood: "🏔️⚾",
+    weather: "맑음, 고지대 특유의 서늘한 기후",
+    withWhom: "가족, 친구들",
+    foodAndDrink: "Rocky Mountain Oysters, Coors Beer, Helton Burger",
+    memorableQuote: "High altitude baseball at its finest!",
+    attendance: "평균 35,000명"
   },
   {
     id: 8,
@@ -303,32 +396,82 @@ Aaron Judge의 홈런에 구장이 흔들릴 정도로 열광하는 모습을 �
   },
   {
     id: 9,
-    date: "2024-09-01",
+    date: "2017-07-08",
     homeTeam: {
       name: "St. Louis Cardinals",
       abbrev: "STL",
       logo: "https://www.mlbstatic.com/team-logos/138.svg"
     },
     awayTeam: {
-      name: "Milwaukee Brewers",
-      abbrev: "MIL",
-      logo: "https://www.mlbstatic.com/team-logos/158.svg"
+      name: "New York Mets",
+      abbrev: "NYM",
+      logo: "https://www.mlbstatic.com/team-logos/121.svg"
     },
-    score: { home: 4, away: 3 },
+    score: { home: 4, away: 1 },
     venue: "Busch Stadium, St. Louis",
-    section: "Infield Box 248",
-    coverImage: "/images/ohtani.jpg",
-    images: ["/images/ohtani.jpg"],
-    videos: [],
-    story: `세인트루이스 카디널스 경기 관람`,
-    highlights: ["Gateway Arch 전망", "카디널스 전통"],
-    mood: "⚾",
-    weather: "맑음",
-    withWhom: "친구",
-    foodAndDrink: "St. Louis Style Pizza",
-    memorableQuote: "Cardinals nation!",
-    pitchers: { home: "Miles Mikolas", away: "Corbin Burnes" },
-    attendance: "43,000명"
+    section: "Field Level",
+    coverImage: "/images/mlb-games/cardinals-cover.jpg",
+    images: [
+      "/images/mlb-games/cardinals-1.jpg",
+      "/images/mlb-games/cardinals-2.jpg",
+      "/images/mlb-games/cardinals-3.jpg",
+      "/images/mlb-games/cardinals-4.jpg",
+      "/images/mlb-games/cardinals-5.jpg",
+      "/images/mlb-games/cardinals-6.jpg",
+      "/images/mlb-games/cardinals-7.jpg",
+      "/images/mlb-games/cardinals-8.jpg",
+      "/images/mlb-games/cardinals-9.jpg",
+      "/images/mlb-games/cardinals-10.jpg",
+      "/images/mlb-games/cardinals-11.jpg"
+    ],
+    videos: [
+      "/videos/mlb-games/cardinals-1.mp4",
+      "/videos/mlb-games/cardinals-2.mp4",
+      "/videos/mlb-games/cardinals-3.mp4",
+      "/videos/mlb-games/cardinals-4.mp4"
+    ],
+    story: `2017년 7월 8일, 세인트루이스 Busch Stadium에서 카디널스 vs 메츠 경기를 관람했습니다.
+
+이 날 경기는 특히 의미가 깊었던 것이, 당시 카디널스의 마무리 투수였던
+오승환 선수가 9회에 등판하여 경기를 완벽하게 마무리하는 장면을
+직접 눈으로 볼 수 있었기 때문입니다.
+
+카디널스가 4-1로 앞서가는 상황에서 9회 오승환 선수가 등판했고,
+한국인 투수가 메이저리그 명문 구단의 마무리 투수로 활약하는 모습을
+직접 보면서 큰 자부심과 감동을 느꼈습니다.
+
+오승환 선수는 안정적인 피칭으로 메츠 타선을 무실점으로 막아내며
+세이브를 기록했고, 카디널스는 승리로 경기를 마무리했습니다.
+
+Busch Stadium은 미시시피 강변에 위치한 아름다운 구장으로,
+붉은색을 상징색으로 하는 카디널스의 전통과 역사가 느껴지는 곳이었습니다.
+특히 구장 밖에서 보이는 Gateway Arch의 풍경이 인상적이었습니다.`,
+    highlights: [
+      "오승환 선수의 9회 마무리 등판",
+      "카디널스 4-1 승리, 오승환 세이브 기록",
+      "한국인 마무리 투수의 완벽한 피칭",
+      "Busch Stadium과 Gateway Arch 전망",
+      "카디널스 전통의 붉은 물결"
+    ],
+    mood: "🇰🇷⚾🔴",
+    weather: "맑음, 섭씨 32도 (더운 여름 낮 경기)",
+    withWhom: "친구들",
+    foodAndDrink: "St. Louis Style BBQ Ribs, Toasted Ravioli, Budweiser",
+    memorableQuote: "오승환의 마무리 투구를 직접 보다니, 평생 잊지 못할 순간!",
+    pitchers: {
+      home: "Luke Weaver",
+      away: "Robert Gsellman",
+      closer: "오승환 (Seung-Hwan Oh) - Save"
+    },
+    attendance: "약 42,000명",
+    koreanPlayer: {
+      name: "오승환 (Seung-Hwan Oh)",
+      team: "St. Louis Cardinals",
+      position: "마무리 투수 (Closer)",
+      number: "26",
+      performance: "9회 등판, 세이브 기록",
+      note: "한국인 최초 한·미·일 마무리 투수로 활약"
+    }
   },
   {
     id: 10,

@@ -1958,16 +1958,17 @@ body {
 /* Game Detail Modal */
 .game-detail-modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 5vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 90%;
   max-width: 900px;
   max-height: 90vh;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   border-radius: 20px;
   overflow-y: auto;
-  z-index: 1001;
+  z-index: 2001;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
@@ -2033,6 +2034,258 @@ body {
   justify-content: center;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Multi-Game Card Badge */
+.multi-game-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(102, 126, 234, 0.3);
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #667eea;
+}
+
+.team-name-large {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+/* Multi-Game Modal Header */
+.multi-game-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.multi-game-header .team-logo-large {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.multi-game-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.multi-game-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Multi-Games List */
+.multi-games-list {
+  margin-bottom: 32px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.multi-games-list h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.multi-game-item {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 12px;
+  transition: all 0.2s;
+}
+
+.multi-game-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.multi-game-item:last-child {
+  margin-bottom: 0;
+}
+
+.multi-game-date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+}
+
+.multi-game-matchup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.multi-game-team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.multi-game-team img {
+  width: 24px;
+  height: 24px;
+}
+
+.multi-game-team span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.multi-game-score {
+  font-size: 18px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.multi-game-at {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.multi-game-result {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+.multi-game-result.win {
+  background: rgba(72, 187, 120, 0.2);
+  color: #48bb78;
+}
+
+.multi-game-result.lose {
+  background: rgba(245, 101, 101, 0.2);
+  color: #f56565;
+}
+
+.multi-game-venue {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.multi-game-special {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffd700;
+  text-align: center;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Korean Players Section */
+.korean-players-section {
+  margin-bottom: 40px;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.1), rgba(0, 0, 255, 0.1));
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.korean-players-section h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.korean-players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.korean-players-grid.single-player {
+  grid-template-columns: 1fr;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.korean-player-card.featured {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+  border: 2px solid rgba(102, 126, 234, 0.3);
+}
+
+.player-performance {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffd700;
+  margin: 12px 0;
+  padding: 8px 12px;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 8px;
+}
+
+.korean-player-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.korean-player-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  border-color: rgba(102, 126, 234, 0.5);
+}
+
+.player-team-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(102, 126, 234, 0.3);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #667eea;
+}
+
+.player-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.player-position {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+}
+
+.player-number {
+  font-size: 32px;
+  font-weight: 900;
+  color: rgba(102, 126, 234, 0.8);
+  margin-bottom: 12px;
+}
+
+.player-note {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Image Gallery */

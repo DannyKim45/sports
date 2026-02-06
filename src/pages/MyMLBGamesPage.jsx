@@ -92,38 +92,58 @@ export default function MyMLBGamesPage() {
             onClick={() => handleGameClick(game)}
           >
             <div className="game-card-image">
-              <img src={game.coverImage} alt={`${game.homeTeam.name} vs ${game.awayTeam.name}`} />
+              <img
+                src={game.coverImage}
+                alt={game.isMultiGame ? game.teamName : `${game.homeTeam.name} vs ${game.awayTeam.name}`}
+              />
               <div className="game-card-overlay">
                 <span className="game-mood">{game.mood}</span>
               </div>
             </div>
 
             <div className="game-card-content">
-              <div className="game-date">
-                {new Date(game.date).toLocaleDateString('ko-KR', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
-              </div>
+              {game.isMultiGame ? (
+                <>
+                  <div className="multi-game-badge">
+                    {game.visitCount}차례 관람
+                  </div>
+                  <div className="team-name-large">
+                    <img src={game.teamLogo} alt={game.teamName} className="team-logo-small" />
+                    <span>{game.teamName}</span>
+                  </div>
+                  <div className="game-venue">
+                    🏟️ Coors Field & More
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="game-date">
+                    {new Date(game.date).toLocaleDateString('ko-KR', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </div>
 
-              <div className="game-matchup">
-                <div className="team">
-                  <img src={game.awayTeam.logo} alt={game.awayTeam.name} className="team-logo-small" />
-                  <span className="team-name-small">{game.awayTeam.abbrev}</span>
-                  <span className="team-score-large">{game.score.away}</span>
-                </div>
-                <span className="vs">@</span>
-                <div className="team">
-                  <span className="team-score-large">{game.score.home}</span>
-                  <span className="team-name-small">{game.homeTeam.abbrev}</span>
-                  <img src={game.homeTeam.logo} alt={game.homeTeam.name} className="team-logo-small" />
-                </div>
-              </div>
+                  <div className="game-matchup">
+                    <div className="team">
+                      <img src={game.awayTeam.logo} alt={game.awayTeam.name} className="team-logo-small" />
+                      <span className="team-name-small">{game.awayTeam.abbrev}</span>
+                      <span className="team-score-large">{game.score.away}</span>
+                    </div>
+                    <span className="vs">@</span>
+                    <div className="team">
+                      <span className="team-score-large">{game.score.home}</span>
+                      <span className="team-name-small">{game.homeTeam.abbrev}</span>
+                      <img src={game.homeTeam.logo} alt={game.homeTeam.name} className="team-logo-small" />
+                    </div>
+                  </div>
 
-              <div className="game-venue">
-                📍 {game.venue}
-              </div>
+                  <div className="game-venue">
+                    📍 {game.venue}
+                  </div>
+                </>
+              )}
             </div>
           </motion.div>
         ))}
@@ -208,56 +228,149 @@ export default function MyMLBGamesPage() {
               </button>
 
               <div className="game-detail-content">
-                {/* Game Header */}
-                <div className="game-detail-header">
-                  <div className="game-detail-date">
-                    {new Date(selectedGame.date).toLocaleDateString('ko-KR', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                      weekday: 'long'
-                    })}
-                  </div>
-
-                  <div className="game-detail-matchup">
-                    <div className="team-detail">
-                      <img src={selectedGame.awayTeam.logo} alt={selectedGame.awayTeam.name} />
-                      <div>
-                        <div className="team-name-detail">{selectedGame.awayTeam.name}</div>
-                        <div className="team-score-detail">{selectedGame.score.away}</div>
-                      </div>
+                {selectedGame.isMultiGame ? (
+                  /* Multi-Game Header */
+                  <div className="game-detail-header">
+                    <div className="multi-game-header">
+                      <img src={selectedGame.teamLogo} alt={selectedGame.teamName} className="team-logo-large" />
+                      <h2>{selectedGame.teamName}</h2>
+                      <div className="multi-game-subtitle">{selectedGame.visitCount}차례 관람 기록</div>
                     </div>
-                    <span className="vs-detail">@</span>
-                    <div className="team-detail">
-                      <div>
-                        <div className="team-name-detail">{selectedGame.homeTeam.name}</div>
-                        <div className="team-score-detail">{selectedGame.score.home}</div>
-                      </div>
-                      <img src={selectedGame.homeTeam.logo} alt={selectedGame.homeTeam.name} />
+
+                    {/* Games List */}
+                    <div className="multi-games-list">
+                      <h3>📅 관람 경기</h3>
+                      {selectedGame.games.map((game, idx) => (
+                        <div key={idx} className="multi-game-item">
+                          <div className="multi-game-date">
+                            {new Date(game.date).toLocaleDateString('ko-KR', {
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                              weekday: 'short'
+                            })}
+                          </div>
+                          <div className="multi-game-matchup">
+                            <div className="multi-game-team">
+                              <img src={game.awayTeam.logo} alt={game.awayTeam.name} />
+                              <span>{game.awayTeam.abbrev}</span>
+                              <span className="multi-game-score">{game.score.away}</span>
+                            </div>
+                            <span className="multi-game-at">@</span>
+                            <div className="multi-game-team">
+                              <span className="multi-game-score">{game.score.home}</span>
+                              <span>{game.homeTeam.abbrev}</span>
+                              <img src={game.homeTeam.logo} alt={game.homeTeam.name} />
+                            </div>
+                            <span className={`multi-game-result ${game.result === '승리' ? 'win' : 'lose'}`}>
+                              {game.result}
+                            </span>
+                          </div>
+                          <div className="multi-game-venue">📍 {game.venue}</div>
+                          {game.special && <div className="multi-game-special">{game.special}</div>}
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="game-detail-info">
+                      <span>🌡️ {selectedGame.weather}</span>
+                      <span>👥 {selectedGame.attendance}</span>
                     </div>
                   </div>
+                ) : (
+                  /* Single Game Header */
+                  <div className="game-detail-header">
+                    <div className="game-detail-date">
+                      {new Date(selectedGame.date).toLocaleDateString('ko-KR', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        weekday: 'long'
+                      })}
+                    </div>
 
-                  <div className="game-detail-info">
-                    <span>📍 {selectedGame.venue}</span>
-                    <span>🎫 {selectedGame.section}</span>
-                    <span>🌡️ {selectedGame.weather}</span>
-                    <span>👥 {selectedGame.attendance}</span>
-                  </div>
-
-                  {/* Pitchers */}
-                  {selectedGame.pitchers && (
-                    <div className="pitchers-matchup">
-                      <div className="pitcher-info">
-                        <span className="pitcher-label">선발 투수</span>
-                        <div className="pitcher-names">
-                          <span>{selectedGame.pitchers.away}</span>
-                          <span className="vs-small">vs</span>
-                          <span>{selectedGame.pitchers.home}</span>
+                    <div className="game-detail-matchup">
+                      <div className="team-detail">
+                        <img src={selectedGame.awayTeam.logo} alt={selectedGame.awayTeam.name} />
+                        <div>
+                          <div className="team-name-detail">{selectedGame.awayTeam.name}</div>
+                          <div className="team-score-detail">{selectedGame.score.away}</div>
                         </div>
                       </div>
+                      <span className="vs-detail">@</span>
+                      <div className="team-detail">
+                        <div>
+                          <div className="team-name-detail">{selectedGame.homeTeam.name}</div>
+                          <div className="team-score-detail">{selectedGame.score.home}</div>
+                        </div>
+                        <img src={selectedGame.homeTeam.logo} alt={selectedGame.homeTeam.name} />
+                      </div>
                     </div>
-                  )}
-                </div>
+
+                    <div className="game-detail-info">
+                      <span>📍 {selectedGame.venue}</span>
+                      <span>🎫 {selectedGame.section}</span>
+                      <span>🌡️ {selectedGame.weather}</span>
+                      <span>👥 {selectedGame.attendance}</span>
+                    </div>
+
+                    {/* Pitchers */}
+                    {selectedGame.pitchers && (
+                      <div className="pitchers-matchup">
+                        <div className="pitcher-info">
+                          <span className="pitcher-label">선발 투수</span>
+                          <div className="pitcher-names">
+                            <span>{selectedGame.pitchers.away}</span>
+                            <span className="vs-small">vs</span>
+                            <span>{selectedGame.pitchers.home}</span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {/* Korean Players Section */}
+                {selectedGame.koreanPlayers && (
+                  <div className="korean-players-section">
+                    <h3>🇰🇷 한국인 선수 출전</h3>
+                    <div className="korean-players-grid">
+                      <div className="korean-player-card">
+                        <div className="player-team-badge">{selectedGame.homeTeam.abbrev}</div>
+                        <div className="player-name">{selectedGame.koreanPlayers.mariners.name}</div>
+                        <div className="player-position">{selectedGame.koreanPlayers.mariners.position}</div>
+                        <div className="player-number">#{selectedGame.koreanPlayers.mariners.number}</div>
+                        <div className="player-note">{selectedGame.koreanPlayers.mariners.note}</div>
+                      </div>
+                      <div className="korean-player-card">
+                        <div className="player-team-badge">{selectedGame.awayTeam.abbrev}</div>
+                        <div className="player-name">{selectedGame.koreanPlayers.cardinals.name}</div>
+                        <div className="player-position">{selectedGame.koreanPlayers.cardinals.position}</div>
+                        <div className="player-number">#{selectedGame.koreanPlayers.cardinals.number}</div>
+                        <div className="player-note">{selectedGame.koreanPlayers.cardinals.note}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Single Korean Player Section */}
+                {selectedGame.koreanPlayer && (
+                  <div className="korean-players-section">
+                    <h3>🇰🇷 한국인 선수 활약</h3>
+                    <div className="korean-players-grid single-player">
+                      <div className="korean-player-card featured">
+                        <div className="player-team-badge">{selectedGame.koreanPlayer.team}</div>
+                        <div className="player-name">{selectedGame.koreanPlayer.name}</div>
+                        <div className="player-position">{selectedGame.koreanPlayer.position}</div>
+                        <div className="player-number">#{selectedGame.koreanPlayer.number}</div>
+                        {selectedGame.koreanPlayer.performance && (
+                          <div className="player-performance">{selectedGame.koreanPlayer.performance}</div>
+                        )}
+                        <div className="player-note">{selectedGame.koreanPlayer.note}</div>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 {/* Image Gallery */}
                 <div className="game-gallery">

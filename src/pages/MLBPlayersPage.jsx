@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { mlbStarPlayers } from "../data/mlbPlayers";
+import MLBStatTable from "../components/players/MLBStatTable";
 
 export default function MLBPlayersPage() {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
@@ -184,39 +185,12 @@ export default function MLBPlayersPage() {
                       exit={{ opacity: 0, y: -20 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="mlb-stats-display">
-                        <h3>주요 통산 기록</h3>
-                        <div className="stats-grid">
-                          <div className="stat-item">
-                            <span className="stat-label">타율</span>
-                            <span className="stat-value">{selectedPlayer.stats.battingAvg?.toFixed(3) || 'N/A'}</span>
-                          </div>
-                          <div className="stat-item">
-                            <span className="stat-label">홈런</span>
-                            <span className="stat-value">{selectedPlayer.stats.homeRuns || 'N/A'}</span>
-                          </div>
-                          <div className="stat-item">
-                            <span className="stat-label">타점</span>
-                            <span className="stat-value">{selectedPlayer.stats.rbi || 'N/A'}</span>
-                          </div>
-                          <div className="stat-item">
-                            <span className="stat-label">도루</span>
-                            <span className="stat-value">{selectedPlayer.stats.stolenBases || 'N/A'}</span>
-                          </div>
-                          {selectedPlayer.stats.era && (
-                            <>
-                              <div className="stat-item">
-                                <span className="stat-label">평균자책점</span>
-                                <span className="stat-value">{selectedPlayer.stats.era.toFixed(2)}</span>
-                              </div>
-                              <div className="stat-item">
-                                <span className="stat-label">탈삼진</span>
-                                <span className="stat-value">{selectedPlayer.stats.strikeouts}</span>
-                              </div>
-                            </>
-                          )}
-                        </div>
-                      </div>
+                      <MLBStatTable
+                        stats={selectedPlayer.stats}
+                        currentSeasonStats={selectedPlayer.currentSeasonStats}
+                        seasonBySeasonStats={selectedPlayer.seasonBySeasonStats}
+                        position={selectedPlayer.position}
+                      />
 
                       <div className="player-achievements">
                         <h3>커리어 업적</h3>

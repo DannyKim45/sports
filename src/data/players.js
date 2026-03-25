@@ -42,11 +42,12 @@ export const starPlayers = [
       pim: 18
     },
     seasonBySeasonStats: [
-      { season: "2024-25", gamesPlayed: 48, goals: 22, assists: 48, points: 70, plusMinus: 12, pim: 18 },
-      { season: "2023-24", gamesPlayed: 76, goals: 32, assists: 100, points: 132, plusMinus: 19, pim: 36 },
-      { season: "2022-23", gamesPlayed: 82, goals: 64, assists: 89, points: 153, plusMinus: 22, pim: 36 },
-      { season: "2021-22", gamesPlayed: 80, goals: 44, assists: 79, points: 123, plusMinus: 8, pim: 26 },
-      { season: "2020-21", gamesPlayed: 56, goals: 33, assists: 72, points: 105, plusMinus: 21, pim: 16 },
+      { season: "2025-26", gamesPlayed: 48, goals: 22, assists: 48, points: 70, plusMinus: 12, pim: 18 },
+      { season: "2024-25", gamesPlayed: 76, goals: 32, assists: 100, points: 132, plusMinus: 19, pim: 36 },
+      { season: "2023-24", gamesPlayed: 82, goals: 64, assists: 89, points: 153, plusMinus: 22, pim: 36 },
+      { season: "2022-23", gamesPlayed: 80, goals: 44, assists: 79, points: 123, plusMinus: 8, pim: 26 },
+      { season: "2021-22", gamesPlayed: 56, goals: 33, assists: 72, points: 105, plusMinus: 21, pim: 16 },
+      { season: "2020-21", gamesPlayed: 64, goals: 34, assists: 63, points: 97, plusMinus: 9, pim: 18 },
       { season: "2019-20", gamesPlayed: 64, goals: 34, assists: 63, points: 97, plusMinus: 9, pim: 18 },
       { season: "2018-19", gamesPlayed: 78, goals: 41, assists: 75, points: 116, plusMinus: 1, pim: 26 },
       { season: "2017-18", gamesPlayed: 82, goals: 41, assists: 67, points: 108, plusMinus: 20, pim: 26 },

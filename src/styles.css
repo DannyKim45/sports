@@ -766,6 +766,57 @@ body {
   opacity: 0.6;
 }
 
+.inning-info {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* MLB Game Decisions */
+.game-decisions {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.decision-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.decision-label {
+  font-weight: 700;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.decision-item.win .decision-label {
+  background: rgba(76, 175, 80, 0.3);
+  color: #4caf50;
+}
+
+.decision-item.loss .decision-label {
+  background: rgba(244, 67, 54, 0.3);
+  color: #f44336;
+}
+
+.decision-item.save .decision-label {
+  background: rgba(102, 126, 234, 0.3);
+  color: #667eea;
+}
+
+.decision-name {
+  opacity: 0.9;
+  font-weight: 500;
+}
+
 .game-broadcasts {
   margin-top: 8px;
   display: flex;
@@ -787,7 +838,9 @@ body {
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
+  gap: 12px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .highlight-button {
@@ -810,6 +863,16 @@ body {
 .highlight-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* MLB Story Button */
+.story-button {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 4px 12px rgba(245, 87, 108, 0.3);
+}
+
+.story-button:hover {
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
 }
 
 .highlight-button:active {
@@ -1314,6 +1377,25 @@ body {
   margin-bottom: 16px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* MLB Stat Sections */
+.stat-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 24px 0 16px 0;
+  color: white;
+}
+
+.stat-section-title.pitcher-section {
+  margin-top: 32px;
+}
+
+.no-stats {
+  padding: 40px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
 }
 
 .traditional-stat-table {

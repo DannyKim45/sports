@@ -14,13 +14,13 @@ export default function StatTable({ stats, currentSeasonStats, seasonBySeasonSta
           className={`stat-tab ${activeTab === "current" ? "active" : ""}`}
           onClick={() => setActiveTab("current")}
         >
-          이번 시즌 (2024-25)
+          이번 시즌 (2025-26)
         </button>
         <button
           className={`stat-tab ${activeTab === "career" ? "active" : ""}`}
           onClick={() => setActiveTab("career")}
         >
-          커리어 전체
+          시즌별 기록
         </button>
       </div>
 

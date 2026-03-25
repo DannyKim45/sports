@@ -5,6 +5,7 @@
 export const mlbStarPlayers = [
   {
     id: 1,
+    mlbId: 660271, // Official MLB player ID for API
     name: "Shohei Ohtani",
     nameKo: "쇼헤이 오타니",
     team: "Los Angeles Dodgers",
@@ -49,9 +50,41 @@ export const mlbStarPlayers = [
       homeRuns: 225,
       rbi: 525,
       stolenBases: 120,
+      hits: 892,
+      doubles: 178,
+      triples: 18,
       era: 3.01,
-      strikeouts: 608
+      wins: 38,
+      losses: 19,
+      saves: 0,
+      inningsPitched: 481.1,
+      strikeouts: 608,
+      whip: 1.02
     },
+    currentSeasonStats: {
+      battingAvg: .288,
+      homeRuns: 0,
+      rbi: 0,
+      stolenBases: 0,
+      hits: 0,
+      doubles: 0,
+      triples: 0,
+      era: null,
+      wins: 0,
+      losses: 0,
+      saves: 0,
+      inningsPitched: 0,
+      strikeouts: 0,
+      whip: null
+    },
+    seasonBySeasonStats: [
+      { season: "2025", battingAvg: .310, homeRuns: 54, rbi: 130, stolenBases: 59, hits: 197, doubles: 38, triples: 7, era: null, wins: 0, losses: 0, saves: 0, inningsPitched: 0, strikeouts: 0, whip: null },
+      { season: "2024", battingAvg: .304, homeRuns: 44, rbi: 95, stolenBases: 20, hits: 162, doubles: 26, triples: 8, era: null, wins: 0, losses: 0, saves: 0, inningsPitched: 0, strikeouts: 0, whip: null },
+      { season: "2023", battingAvg: .304, homeRuns: 44, rbi: 95, stolenBases: 20, hits: 151, doubles: 28, triples: 5, era: 3.14, wins: 10, losses: 5, saves: 0, inningsPitched: 132, strikeouts: 167, whip: 1.04 },
+      { season: "2022", battingAvg: .273, homeRuns: 34, rbi: 95, stolenBases: 11, hits: 157, doubles: 23, triples: 8, era: 2.33, wins: 15, losses: 9, saves: 0, inningsPitched: 166, strikeouts: 219, whip: 1.01 },
+      { season: "2021", battingAvg: .257, homeRuns: 46, rbi: 100, stolenBases: 26, hits: 138, doubles: 26, triples: 8, era: 3.18, wins: 9, losses: 2, saves: 0, inningsPitched: 130.1, strikeouts: 156, whip: 1.09 },
+      { season: "2018", battingAvg: .285, homeRuns: 22, rbi: 61, stolenBases: 10, hits: 93, doubles: 21, triples: 4, era: 3.31, wins: 4, losses: 2, saves: 0, inningsPitched: 51.2, strikeouts: 63, whip: 1.16 }
+    ],
     highlights: [
       {
         title: "50-50 클럽 달성 순간",

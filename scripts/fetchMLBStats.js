@@ -54,9 +54,9 @@ async function getPlayerSeasonStats(playerId, playerName, position) {
   const hittingSplits = hittingData.stats[0].splits || [];
   const pitchingSplits = pitchingData?.stats?.[0]?.splits || [];
 
-  // Filter for regular season only (2018-2024)
+  // Filter for regular season only (all career seasons through 2025)
   const recentSeasons = hittingSplits
-    .filter(s => s.gameType === 'R' && parseInt(s.season) >= 2018 && parseInt(s.season) <= 2024)
+    .filter(s => s.gameType === 'R' && parseInt(s.season) <= 2025)
     .sort((a, b) => parseInt(b.season) - parseInt(a.season));
 
   console.log(`   Found ${recentSeasons.length} seasons of data`);
@@ -102,32 +102,32 @@ async function getPlayerSeasonStats(playerId, playerName, position) {
 
   if (isPitcher && pitchingSplits.length > 0) {
     const totalIP = pitchingSplits
-      .filter(p => p.gameType === 'R' && parseInt(p.season) >= 2018 && parseInt(p.season) <= 2024)
+      .filter(p => p.gameType === 'R' && parseInt(p.season) <= 2025)
       .reduce((sum, p) => sum + parseNumber(p.stat.inningsPitched), 0);
     const totalER = pitchingSplits
-      .filter(p => p.gameType === 'R' && parseInt(p.season) >= 2018 && parseInt(p.season) <= 2024)
+      .filter(p => p.gameType === 'R' && parseInt(p.season) <= 2025)
       .reduce((sum, p) => sum + parseNumber(p.stat.earnedRuns), 0);
 
     careerStats.era = totalIP > 0 ? parseNumber(((totalER * 9) / totalIP).toFixed(2)) : null;
     careerStats.wins = pitchingSplits
-      .filter(p => p.gameType === 'R' && parseInt(p.season) >= 2018 && parseInt(p.season) <= 2024)
+      .filter(p => p.gameType === 'R' && parseInt(p.season) <= 2025)
       .reduce((sum, p) => sum + parseNumber(p.stat.wins), 0);
     careerStats.losses = pitchingSplits
-      .filter(p => p.gameType === 'R' && parseInt(p.season) >= 2018 && parseInt(p.season) <= 2024)
+      .filter(p => p.gameType === 'R' && parseInt(p.season) <= 2025)
       .reduce((sum, p) => sum + parseNumber(p.stat.losses), 0);
     careerStats.saves = pitchingSplits
-      .filter(p => p.gameType === 'R' && parseInt(p.season) >= 2018 && parseInt(p.season) <= 2024)
+      .filter(p => p.gameType === 'R' && parseInt(p.season) <= 2025)
       .reduce((sum, p) => sum + parseNumber(p.stat.saves), 0);
     careerStats.inningsPitched = totalIP;
     careerStats.strikeouts = pitchingSplits
-      .filter(p => p.gameType === 'R' && parseInt(p.season) >= 2018 && parseInt(p.season) <= 2024)
+      .filter(p => p.gameType === 'R' && parseInt(p.season) <= 2025)
       .reduce((sum, p) => sum + parseNumber(p.stat.strikeOuts), 0);
 
     const totalHits = pitchingSplits
-      .filter(p => p.gameType === 'R' && parseInt(p.season) >= 2018 && parseInt(p.season) <= 2024)
+      .filter(p => p.gameType === 'R' && parseInt(p.season) <= 2025)
       .reduce((sum, p) => sum + parseNumber(p.stat.hits), 0);
     const totalBB = pitchingSplits
-      .filter(p => p.gameType === 'R' && parseInt(p.season) >= 2018 && parseInt(p.season) <= 2024)
+      .filter(p => p.gameType === 'R' && parseInt(p.season) <= 2025)
       .reduce((sum, p) => sum + parseNumber(p.stat.baseOnBalls), 0);
     careerStats.whip = totalIP > 0 ? parseNumber(((totalHits + totalBB) / totalIP).toFixed(2)) : null;
   } else {

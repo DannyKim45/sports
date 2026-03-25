@@ -46,44 +46,45 @@ export const mlbStarPlayers = [
       "50 홈런 - 50 도루 달성 (MLB 역사상 최초)"
     ],
     stats: {
-      battingAvg: .310,
+      battingAvg: 0.282,
       homeRuns: 225,
-      rbi: 525,
-      stolenBases: 120,
-      hits: 892,
-      doubles: 178,
-      triples: 18,
-      era: 3.01,
+      rbi: 567,
+      stolenBases: 145,
+      hits: 878,
+      doubles: 167,
+      triples: 36,
+      era: 3.02,
       wins: 38,
       losses: 19,
       saves: 0,
-      inningsPitched: 481.1,
+      inningsPitched: 480.5,
       strikeouts: 608,
-      whip: 1.02
+      whip: 1.08
     },
     currentSeasonStats: {
-      battingAvg: .288,
+      battingAvg: 0.000,
       homeRuns: 0,
       rbi: 0,
       stolenBases: 0,
       hits: 0,
       doubles: 0,
       triples: 0,
-      era: null,
+      era: 0.00,
       wins: 0,
       losses: 0,
       saves: 0,
       inningsPitched: 0,
       strikeouts: 0,
-      whip: null
+      whip: 0.00
     },
     seasonBySeasonStats: [
-      { season: "2025", battingAvg: .310, homeRuns: 54, rbi: 130, stolenBases: 59, hits: 197, doubles: 38, triples: 7, era: null, wins: 0, losses: 0, saves: 0, inningsPitched: 0, strikeouts: 0, whip: null },
-      { season: "2024", battingAvg: .304, homeRuns: 44, rbi: 95, stolenBases: 20, hits: 162, doubles: 26, triples: 8, era: null, wins: 0, losses: 0, saves: 0, inningsPitched: 0, strikeouts: 0, whip: null },
-      { season: "2023", battingAvg: .304, homeRuns: 44, rbi: 95, stolenBases: 20, hits: 151, doubles: 28, triples: 5, era: 3.14, wins: 10, losses: 5, saves: 0, inningsPitched: 132, strikeouts: 167, whip: 1.04 },
-      { season: "2022", battingAvg: .273, homeRuns: 34, rbi: 95, stolenBases: 11, hits: 157, doubles: 23, triples: 8, era: 2.33, wins: 15, losses: 9, saves: 0, inningsPitched: 166, strikeouts: 219, whip: 1.01 },
-      { season: "2021", battingAvg: .257, homeRuns: 46, rbi: 100, stolenBases: 26, hits: 138, doubles: 26, triples: 8, era: 3.18, wins: 9, losses: 2, saves: 0, inningsPitched: 130.1, strikeouts: 156, whip: 1.09 },
-      { season: "2018", battingAvg: .285, homeRuns: 22, rbi: 61, stolenBases: 10, hits: 93, doubles: 21, triples: 4, era: 3.31, wins: 4, losses: 2, saves: 0, inningsPitched: 51.2, strikeouts: 63, whip: 1.16 }
+      { season: "2024", battingAvg: 0.31, homeRuns: 54, rbi: 130, stolenBases: 59, hits: 197, doubles: 38, triples: 7, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", battingAvg: 0.304, homeRuns: 44, rbi: 95, stolenBases: 20, hits: 151, doubles: 26, triples: 8, era: 3.14, wins: 10, losses: 5, saves: 0, inningsPitched: 132, strikeouts: 167, whip: 1.06 },
+      { season: "2022", battingAvg: 0.273, homeRuns: 34, rbi: 95, stolenBases: 11, hits: 160, doubles: 30, triples: 6, era: 2.33, wins: 15, losses: 9, saves: 0, inningsPitched: 166, strikeouts: 219, whip: 1.01 },
+      { season: "2021", battingAvg: 0.257, homeRuns: 46, rbi: 100, stolenBases: 26, hits: 138, doubles: 26, triples: 8, era: 3.18, wins: 9, losses: 2, saves: 0, inningsPitched: 130.1, strikeouts: 156, whip: 1.09 },
+      { season: "2020", battingAvg: 0.19, homeRuns: 7, rbi: 24, stolenBases: 7, hits: 29, doubles: 6, triples: 0, era: 37.8, wins: 0, losses: 1, saves: 0, inningsPitched: 1.2, strikeouts: 3, whip: 6.6 },
+      { season: "2019", battingAvg: 0.286, homeRuns: 18, rbi: 62, stolenBases: 12, hits: 110, doubles: 20, triples: 5, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2018", battingAvg: 0.285, homeRuns: 22, rbi: 61, stolenBases: 10, hits: 93, doubles: 21, triples: 2, era: 3.31, wins: 4, losses: 2, saves: 0, inningsPitched: 51.2, strikeouts: 63, whip: 1.16 }
     ],
     highlights: [
       {
@@ -100,13 +101,14 @@ export const mlbStarPlayers = [
   },
   {
     id: 2,
+    mlbId: 592450, // Official MLB player ID
     name: "Aaron Judge",
     nameKo: "애런 저지",
     team: "New York Yankees",
     teamAbbrev: "NYY",
     position: "RF",
     number: 99,
-    image: "/images/players/judge.jpg",
+    image: "/images/judge.jpg",
     country: "USA",
     birthDate: "1992-04-26",
     height: "6'7\"",
@@ -122,13 +124,46 @@ export const mlbStarPlayers = [
       "Silver Slugger Award"
     ],
     stats: {
-      battingAvg: .276,
-      homeRuns: 245,
-      rbi: 580,
-      stolenBases: 32,
+      battingAvg: 0.292,
+      homeRuns: 259,
+      rbi: 592,
+      stolenBases: 44,
+      hits: 857,
+      doubles: 147,
+      triples: 2,
       era: null,
-      strikeouts: null
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
     },
+    currentSeasonStats: {
+      battingAvg: 0.000,
+      homeRuns: 0,
+      rbi: 0,
+      stolenBases: 0,
+      hits: 0,
+      doubles: 0,
+      triples: 0,
+      era: null,
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
+    },
+    seasonBySeasonStats: [
+      { season: "2024", battingAvg: 0.322, homeRuns: 58, rbi: 144, stolenBases: 10, hits: 180, doubles: 36, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", battingAvg: 0.267, homeRuns: 37, rbi: 75, stolenBases: 3, hits: 98, doubles: 16, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", battingAvg: 0.311, homeRuns: 62, rbi: 131, stolenBases: 16, hits: 177, doubles: 28, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", battingAvg: 0.287, homeRuns: 39, rbi: 98, stolenBases: 6, hits: 158, doubles: 24, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2020", battingAvg: 0.257, homeRuns: 9, rbi: 22, stolenBases: 0, hits: 26, doubles: 3, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2019", battingAvg: 0.272, homeRuns: 27, rbi: 55, stolenBases: 3, hits: 103, doubles: 18, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2018", battingAvg: 0.278, homeRuns: 27, rbi: 67, stolenBases: 6, hits: 115, doubles: 22, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+    ],
     personalStories: [
       {
         title: "양키스의 주장",
@@ -138,13 +173,14 @@ export const mlbStarPlayers = [
   },
   {
     id: 3,
+    mlbId: 665489, // Official MLB player ID
     name: "Vladimir Guerrero Jr.",
     nameKo: "블라디미르 게레로 주니어",
     team: "Toronto Blue Jays",
     teamAbbrev: "TOR",
     position: "1B",
     number: 27,
-    image: "/images/players/guerrero.jpg",
+    image: "/images/guerrero.jpg",
     country: "Canada",
     birthDate: "1999-03-16",
     height: "6'0\"",
@@ -158,13 +194,45 @@ export const mlbStarPlayers = [
       "AL 타율왕 후보"
     ],
     stats: {
-      battingAvg: .285,
-      homeRuns: 165,
-      rbi: 480,
-      stolenBases: 18,
+      battingAvg: 0.288,
+      homeRuns: 160,
+      rbi: 507,
+      stolenBases: 20,
+      hits: 905,
+      doubles: 177,
+      triples: 6,
       era: null,
-      strikeouts: null
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
     },
+    currentSeasonStats: {
+      battingAvg: 0.000,
+      homeRuns: 0,
+      rbi: 0,
+      stolenBases: 0,
+      hits: 0,
+      doubles: 0,
+      triples: 0,
+      era: null,
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
+    },
+    seasonBySeasonStats: [
+      { season: "2024", battingAvg: 0.323, homeRuns: 30, rbi: 103, stolenBases: 2, hits: 199, doubles: 44, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", battingAvg: 0.264, homeRuns: 26, rbi: 94, stolenBases: 5, hits: 159, doubles: 30, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", battingAvg: 0.274, homeRuns: 32, rbi: 97, stolenBases: 8, hits: 175, doubles: 35, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", battingAvg: 0.311, homeRuns: 48, rbi: 111, stolenBases: 4, hits: 188, doubles: 29, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2020", battingAvg: 0.262, homeRuns: 9, rbi: 33, stolenBases: 1, hits: 58, doubles: 13, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2019", battingAvg: 0.272, homeRuns: 15, rbi: 69, stolenBases: 0, hits: 126, doubles: 26, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+    ],
     personalStories: [
       {
         title: "아버지의 DNA",
@@ -174,13 +242,14 @@ export const mlbStarPlayers = [
   },
   {
     id: 4,
+    mlbId: 547180, // Official MLB player ID
     name: "Bryce Harper",
     nameKo: "브라이스 하퍼",
     team: "Philadelphia Phillies",
     teamAbbrev: "PHI",
     position: "1B",
     number: 3,
-    image: "/images/players/harper.jpg",
+    image: "/images/harper.jpg",
     country: "USA",
     birthDate: "1992-10-16",
     height: "6'2\"",
@@ -195,13 +264,46 @@ export const mlbStarPlayers = [
       "Silver Slugger Award"
     ],
     stats: {
-      battingAvg: .280,
-      homeRuns: 320,
-      rbi: 890,
-      stolenBases: 105,
+      battingAvg: 0.278,
+      homeRuns: 186,
+      rbi: 555,
+      stolenBases: 78,
+      hits: 885,
+      doubles: 220,
+      triples: 6,
       era: null,
-      strikeouts: null
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
     },
+    currentSeasonStats: {
+      battingAvg: 0.000,
+      homeRuns: 0,
+      rbi: 0,
+      stolenBases: 0,
+      hits: 0,
+      doubles: 0,
+      triples: 0,
+      era: null,
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
+    },
+    seasonBySeasonStats: [
+      { season: "2024", battingAvg: 0.285, homeRuns: 30, rbi: 87, stolenBases: 7, hits: 157, doubles: 42, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", battingAvg: 0.293, homeRuns: 21, rbi: 72, stolenBases: 11, hits: 134, doubles: 29, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", battingAvg: 0.286, homeRuns: 18, rbi: 65, stolenBases: 11, hits: 106, doubles: 28, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", battingAvg: 0.309, homeRuns: 35, rbi: 84, stolenBases: 13, hits: 151, doubles: 42, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2020", battingAvg: 0.268, homeRuns: 13, rbi: 33, stolenBases: 8, hits: 51, doubles: 9, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2019", battingAvg: 0.26, homeRuns: 35, rbi: 114, stolenBases: 15, hits: 149, doubles: 36, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2018", battingAvg: 0.249, homeRuns: 34, rbi: 100, stolenBases: 13, hits: 137, doubles: 34, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+    ],
     personalStories: [
       {
         title: "필라델피아 사랑",
@@ -211,13 +313,14 @@ export const mlbStarPlayers = [
   },
   {
     id: 5,
+    mlbId: 665742, // Official MLB player ID
     name: "Juan Soto",
     nameKo: "후안 소토",
     team: "New York Mets",
     teamAbbrev: "NYM",
     position: "RF",
     number: 22,
-    image: "/images/players/soto.jpg",
+    image: "/images/soto.jpg",
     country: "Dominican Republic",
     birthDate: "1998-10-25",
     height: "6'1\"",
@@ -232,13 +335,46 @@ export const mlbStarPlayers = [
       "NL 타율왕 후보"
     ],
     stats: {
-      battingAvg: .285,
-      homeRuns: 185,
-      rbi: 565,
-      stolenBases: 42,
+      battingAvg: 0.281,
+      homeRuns: 228,
+      rbi: 654,
+      stolenBases: 63,
+      hits: 1061,
+      doubles: 204,
+      triples: 17,
       era: null,
-      strikeouts: null
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
     },
+    currentSeasonStats: {
+      battingAvg: 0.000,
+      homeRuns: 0,
+      rbi: 0,
+      stolenBases: 0,
+      hits: 0,
+      doubles: 0,
+      triples: 0,
+      era: null,
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
+    },
+    seasonBySeasonStats: [
+      { season: "2024", battingAvg: 0.288, homeRuns: 41, rbi: 109, stolenBases: 7, hits: 166, doubles: 31, triples: 4, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", battingAvg: 0.275, homeRuns: 35, rbi: 109, stolenBases: 12, hits: 156, doubles: 32, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", battingAvg: 0.242, homeRuns: 27, rbi: 62, stolenBases: 6, hits: 127, doubles: 25, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", battingAvg: 0.313, homeRuns: 29, rbi: 95, stolenBases: 9, hits: 157, doubles: 20, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2020", battingAvg: 0.351, homeRuns: 13, rbi: 37, stolenBases: 6, hits: 54, doubles: 14, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2019", battingAvg: 0.282, homeRuns: 34, rbi: 110, stolenBases: 12, hits: 153, doubles: 32, triples: 5, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2018", battingAvg: 0.292, homeRuns: 22, rbi: 70, stolenBases: 5, hits: 121, doubles: 25, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+    ],
     personalStories: [
       {
         title: "전설적인 선구안",
@@ -252,13 +388,14 @@ export const mlbStarPlayers = [
   },
   {
     id: 6,
+    mlbId: 663728, // Official MLB player ID
     name: "Cal Raleigh",
     nameKo: "칼 랠리",
     team: "Seattle Mariners",
     teamAbbrev: "SEA",
     position: "C",
     number: 29,
-    image: "/images/players/raleigh.jpg",
+    image: "/images/raleigh.jpg",
     country: "USA",
     birthDate: "1996-11-26",
     height: "6'2\"",
@@ -272,13 +409,43 @@ export const mlbStarPlayers = [
       "시애틀 매리너스 프랜차이즈 기록"
     ],
     stats: {
-      battingAvg: .252,
-      homeRuns: 85,
-      rbi: 250,
-      stolenBases: 5,
+      battingAvg: 0.218,
+      homeRuns: 93,
+      rbi: 251,
+      stolenBases: 7,
+      hits: 342,
+      doubles: 71,
+      triples: 2,
       era: null,
-      strikeouts: null
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
     },
+    currentSeasonStats: {
+      battingAvg: 0.000,
+      homeRuns: 0,
+      rbi: 0,
+      stolenBases: 0,
+      hits: 0,
+      doubles: 0,
+      triples: 0,
+      era: null,
+      wins: null,
+      losses: null,
+      saves: null,
+      inningsPitched: null,
+      strikeouts: null,
+      whip: null
+    },
+    seasonBySeasonStats: [
+      { season: "2024", battingAvg: 0.22, homeRuns: 34, rbi: 100, stolenBases: 6, hits: 120, doubles: 16, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", battingAvg: 0.232, homeRuns: 30, rbi: 75, stolenBases: 0, hits: 119, doubles: 23, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", battingAvg: 0.211, homeRuns: 27, rbi: 63, stolenBases: 1, hits: 78, doubles: 20, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", battingAvg: 0.18, homeRuns: 2, rbi: 13, stolenBases: 0, hits: 25, doubles: 12, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+    ],
     personalStories: [
       {
         title: "Big Dumper",

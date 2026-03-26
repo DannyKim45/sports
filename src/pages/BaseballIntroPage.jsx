@@ -1,8 +1,8 @@
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 import Hero from "../components/shared/Hero";
 import TextSection from "../components/shared/TextSection";
 import ImageTextSection from "../components/shared/ImageTextSection";
-import VideoSection from "../components/shared/VideoSection";
 
 export default function BaseballIntroPage() {
   useEffect(() => {
@@ -11,21 +11,31 @@ export default function BaseballIntroPage() {
 
   return (
     <>
+      {/* 1. Hero - MLB 전경 */}
       <Hero
         title="Major League Baseball"
         subtitle="미국 야구의 최고봉, MLB의 매력"
-        backgroundImage="/images/ohtani.jpg"
+        backgroundImage="/images/baseball-hero.jpg"
       />
 
-      <TextSection
-        title="MLB란?"
-        content="메이저리그 베이스볼(MLB)은 미국과 캐나다의 30개 팀이 참가하는 세계 최고 수준의 프로 야구 리그입니다. 1903년부터 시작된 월드 시리즈는 스포츠 역사상 가장 오래된 챔피언십 중 하나입니다."
-      />
-
+      {/* 2. MLB란? - B타입: 이미지+텍스트 */}
       <ImageTextSection
-        imageSrc="/images/ohtani.jpg"
-        imageAlt="Shohei Ohtani"
+        imageSrc="/images/baseball-intro.jpg"
+        imageAlt="Baseball in the United States"
         imagePosition="left"
+        title="MLB란?"
+      >
+        <p>
+          메이저리그 베이스볼(MLB)은 미국과 캐나다의 30개 팀이 참가하는 세계 최고 수준의 프로 야구 리그입니다.
+          1903년부터 시작된 월드 시리즈는 스포츠 역사상 가장 오래된 챔피언십 중 하나입니다.
+        </p>
+      </ImageTextSection>
+
+      {/* 3. MLB의 매력 - 경기 액션 이미지 */}
+      <ImageTextSection
+        imageSrc="/images/baseball-game.jpg"
+        imageAlt="MLB Game Action"
+        imagePosition="right"
         title="MLB의 매력"
         quote="162경기의 긴 여정, 그리고 드라마"
       >
@@ -40,9 +50,11 @@ export default function BaseballIntroPage() {
         </p>
       </ImageTextSection>
 
+      {/* 4. 리그 구조 - C타입: 배경 이미지 */}
       <TextSection
         title="리그 구조"
-        split
+        layout="split"
+        backgroundImage="/images/baseball-league.jpg"
       >
         <div>
           <h3>아메리칸 리그 (AL)</h3>
@@ -62,16 +74,31 @@ export default function BaseballIntroPage() {
         </div>
       </TextSection>
 
-      <VideoSection
-        videoSrc="https://www.youtube.com/embed/YOUR_MLB_VIDEO_ID"
-        title="MLB 2024 시즌 하이라이트"
-        description="2024 시즌의 최고의 순간들을 영상으로 만나보세요"
-      />
+      {/* 5. 2026 오프닝 데이 트레일러 */}
+      <motion.section
+        className="youtube-section"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        <h2 className="section-title">2026 시즌 오프닝 데이 트레일러</h2>
+        <div className="youtube-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/n-I3uEVyOi8"
+            title="MLB 2026 Opening Day Trailer"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </motion.section>
 
+      {/* 6. 시즌 일정 - C타입: 배경 이미지 */}
       <TextSection
         title="시즌 일정"
-        content="MLB 시즌은 크게 스프링 트레이닝, 정규시즌, 포스트시즌으로 나뉩니다."
+        backgroundImage="/images/baseball-season.jpg"
       >
+        <p>MLB 시즌은 크게 스프링 트레이닝, 정규시즌, 포스트시즌으로 나뉩니다.</p>
         <ul>
           <li><strong>스프링 트레이닝 (2~3월)</strong>: 플로리다와 애리조나에서 시범 경기</li>
           <li><strong>개막일 (3월 말~4월 초)</strong>: 정규시즌 시작</li>
@@ -82,10 +109,11 @@ export default function BaseballIntroPage() {
         </ul>
       </TextSection>
 
+      {/* 7. 경기 관람의 즐거움 - 구장 분위기 이미지 */}
       <ImageTextSection
-        imageSrc="/images/ohtani.jpg"
-        imageAlt="Baseball Stadium"
-        imagePosition="right"
+        imageSrc="/images/baseball-fans.jpg"
+        imageAlt="Baseball Stadium Experience"
+        imagePosition="left"
         title="경기 관람의 즐거움"
         quote="구장에서 느끼는 야구의 모든 것"
       >

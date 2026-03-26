@@ -5,13 +5,16 @@ export default function TextSection({
   quote,
   children,
   className = "",
-  layout = "full" // "full" or "split"
+  layout = "full", // "full" or "split"
+  backgroundImage
 }) {
   const sectionClass = layout === "split" ? "text-section split" : "text-section full";
+  const hasBg = !!backgroundImage;
 
   return (
     <motion.section
-      className={`${sectionClass} ${className}`}
+      className={`${sectionClass}${hasBg ? " has-bg" : ""} ${className}`}
+      style={hasBg ? { "--section-bg": `url(${backgroundImage})` } : {}}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}

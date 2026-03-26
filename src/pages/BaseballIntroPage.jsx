@@ -11,7 +11,7 @@ export default function BaseballIntroPage() {
 
   return (
     <>
-      {/* 1. Hero - MLB 전경 */}
+      {/* 1. Hero - 다저 스타디움 파노라마 */}
       <Hero
         title="Major League Baseball"
         subtitle="미국 야구의 최고봉, MLB의 매력"
@@ -31,10 +31,9 @@ export default function BaseballIntroPage() {
         </p>
       </ImageTextSection>
 
-      {/* 3. MLB의 매력 - 경기 액션 이미지 */}
+      {/* 3. MLB의 매력 - 린도어 수비 하이라이트 영상 */}
       <ImageTextSection
-        imageSrc="/images/baseball-game.jpg"
-        imageAlt="MLB Game Action"
+        videoSrc="https://www.youtube.com/embed/x0K4pnv64vw"
         imagePosition="right"
         title="MLB의 매력"
         quote="162경기의 긴 여정, 그리고 드라마"
@@ -109,10 +108,10 @@ export default function BaseballIntroPage() {
         </ul>
       </TextSection>
 
-      {/* 7. 경기 관람의 즐거움 - 구장 분위기 이미지 */}
+      {/* 7. 경기 관람의 즐거움 - 야구장 불꽃놀이 */}
       <ImageTextSection
         imageSrc="/images/baseball-fans.jpg"
-        imageAlt="Baseball Stadium Experience"
+        imageAlt="Fireworks at Ballpark"
         imagePosition="left"
         title="경기 관람의 즐거움"
         quote="구장에서 느끼는 야구의 모든 것"
@@ -123,9 +122,16 @@ export default function BaseballIntroPage() {
           현대적인 첨단 시설을 갖춘 새 구장까지 다양합니다.
         </p>
         <p>
-          경기 전후로 즐길 수 있는 다양한 음식과 이벤트, 그리고
-          7회 중간 부르는 'Take Me Out to the Ball Game'은
-          MLB 관람의 빠질 수 없는 즐거움입니다.
+          <strong>프로모션 데이</strong>에는 유니폼, 모자, 버블헤드 등 다양한 기념품을 무료로 받을 수 있으며,
+          테마 데이에는 특별한 이벤트와 공연이 펼쳐집니다.
+          특히 <strong>버블헤드</strong>는 선수별·시즌별로 한정 제작되는 소장 가치 높은 아이템으로,
+          수집가들 사이에서 큰 인기를 끌고 있습니다.
+          버블헤드 증정 경기 일정을 미리 확인하고 관람 계획을 세우는 것은
+          컬렉터들에게 특별한 의미가 될 수 있습니다.
+        </p>
+        <p>
+          특히 <strong>독립 기념일(7월 4일)</strong> 전후로 열리는 경기에서는
+          경기 종료 후 구장 위로 화려한 불꽃놀이가 펼쳐져 MLB 관람의 백미로 꼽힙니다.
         </p>
       </ImageTextSection>
     </>

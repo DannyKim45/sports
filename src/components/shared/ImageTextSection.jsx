@@ -6,6 +6,7 @@ export default function ImageTextSection({
   children,
   imageSrc,
   imageAlt = "",
+  videoSrc,
   imagePosition = "left", // "left" or "right"
   className = ""
 }) {
@@ -19,7 +20,18 @@ export default function ImageTextSection({
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <img src={imageSrc} alt={imageAlt} />
+      {videoSrc ? (
+        <div className="image-text-video-wrapper">
+          <iframe
+            src={videoSrc}
+            title={title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      ) : (
+        <img src={imageSrc} alt={imageAlt} />
+      )}
     </motion.div>
   );
 

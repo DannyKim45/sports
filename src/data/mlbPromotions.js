@@ -29,7 +29,7 @@ export const mlbPromotions = {
     teamName: "Los Angeles Angels"
   },
   SEA: {
-    url: "https://www.mlb.com/mariners/tickets/theme-games",
+    url: "https://www.mlb.com/mariners/tickets/promotions",
     teamName: "Seattle Mariners"
   },
   NYM: {

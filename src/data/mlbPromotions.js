@@ -85,7 +85,7 @@ export const mlbPromotions = {
     teamName: "Milwaukee Brewers"
   },
   DET: {
-    url: "https://www.mlb.com/tigers/tickets/promotions",
+    url: "https://www.mlb.com/tigers/tickets/promotions/giveaways",
     teamName: "Detroit Tigers"
   },
   CLE: {

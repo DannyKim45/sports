@@ -9,7 +9,7 @@ export const mlbPromotions = {
     teamName: "Los Angeles Dodgers"
   },
   NYY: {
-    url: "https://www.mlb.com/yankees/tickets/specials",
+    url: "https://www.mlb.com/yankees/tickets/promotions/schedule",
     teamName: "New York Yankees"
   },
   BOS: {
@@ -21,7 +21,7 @@ export const mlbPromotions = {
     teamName: "San Francisco Giants"
   },
   CHC: {
-    url: "https://www.mlb.com/cubs/tickets/theme-games",
+    url: "https://www.mlb.com/cubs/tickets/promotions/2026",
     teamName: "Chicago Cubs"
   },
   LAA: {

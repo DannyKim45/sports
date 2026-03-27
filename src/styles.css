@@ -1666,6 +1666,12 @@ body {
     font-size: 36px;
   }
 
+  .team-selector {
+    top: 88px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .section .content {
     left: 24px;
     bottom: 40px;
@@ -2997,6 +3003,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  position: sticky;
+  top: 64px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .team-selector-label {

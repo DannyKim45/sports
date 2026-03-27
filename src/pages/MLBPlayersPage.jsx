@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { mlbStarPlayers } from "../data/mlbPlayers";
 import MLBStatTable from "../components/players/MLBStatTable";
+import { useMLBPlayerStats } from "../hooks/useMLBPlayerStats";
 
 export default function MLBPlayersPage() {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const [activeTab, setActiveTab] = useState('stats');
+  const { liveStats, loading: statsLoading } = useMLBPlayerStats(selectedPlayer);
 
   useEffect(() => {
     document.title = "MLB 스타 선수 | Sports Athletes";
@@ -48,7 +50,7 @@ export default function MLBPlayersPage() {
           >
             <div className="player-card" onClick={() => handlePlayerClick(player)}>
               <div className="player-card-image">
-                <img src={player.image} alt={player.name} />
+                <img src={player.image} alt={player.name} style={player.imagePosition ? { objectPosition: player.imagePosition } : undefined} />
                 <div className="player-card-overlay">
                   <div className="player-number">#{player.number}</div>
                 </div>
@@ -96,7 +98,7 @@ export default function MLBPlayersPage() {
                 {/* Player Header */}
                 <div className="player-header">
                   <div className="player-image-large">
-                    <img src={selectedPlayer.image} alt={selectedPlayer.name} />
+                    <img src={selectedPlayer.image} alt={selectedPlayer.name} style={selectedPlayer.imagePosition ? { objectPosition: selectedPlayer.imagePosition } : undefined} />
                     <div className="player-number-large">
                       #{selectedPlayer.number}
                     </div>
@@ -187,9 +189,10 @@ export default function MLBPlayersPage() {
                     >
                       <MLBStatTable
                         stats={selectedPlayer.stats}
-                        currentSeasonStats={selectedPlayer.currentSeasonStats}
+                        currentSeasonStats={liveStats || selectedPlayer.currentSeasonStats}
                         seasonBySeasonStats={selectedPlayer.seasonBySeasonStats}
                         position={selectedPlayer.position}
+                        statsLoading={statsLoading}
                       />
 
                       <div className="player-achievements">

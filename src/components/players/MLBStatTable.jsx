@@ -1,11 +1,17 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeasonStats, position }) {
+export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeasonStats, position, statsLoading }) {
   const [activeTab, setActiveTab] = useState("current");
 
   // 투수인지 타자인지 확인
-  const isPitcher = position && (position.includes("Pitcher") || position === "P");
+  const isPitcher = position && (
+    position.includes("Pitcher") ||
+    position === "P" ||
+    position === "SP" ||
+    position === "RP" ||
+    position === "CP"
+  );
 
   // 타자 통계 렌더링 (시즌별)
   const renderBatterStats = (seasonData, isCareer = false) => (
@@ -13,6 +19,7 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
       <thead>
         <tr>
           {isCareer && <th>시즌</th>}
+          {isCareer && <th>팀</th>}
           <th>AVG</th>
           <th>HR</th>
           <th>RBI</th>
@@ -24,11 +31,11 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
       </thead>
       <tbody>
         {isCareer ? (
-          // 시즌별 + 합계
           <>
             {seasonBySeasonStats && seasonBySeasonStats.map((season, index) => (
               <tr key={index}>
                 <td className="season-label">{season.season}</td>
+                <td className="team-badge">{season.team || '-'}</td>
                 <td>{season.battingAvg?.toFixed(3) || '.000'}</td>
                 <td>{season.homeRuns || 0}</td>
                 <td>{season.rbi || 0}</td>
@@ -38,9 +45,9 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
                 <td>{season.triples || 0}</td>
               </tr>
             ))}
-            {/* 통산 합계 */}
             <tr className="total-row">
-              <td className="season-label"><strong>통산 합계</strong></td>
+              <td className="season-label"><strong>통산</strong></td>
+              <td>-</td>
               <td><strong>{stats.battingAvg?.toFixed(3) || '.000'}</strong></td>
               <td><strong>{stats.homeRuns || 0}</strong></td>
               <td><strong>{stats.rbi || 0}</strong></td>
@@ -51,7 +58,6 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
             </tr>
           </>
         ) : (
-          // 이번 시즌만
           <tr>
             <td><strong>{seasonData.battingAvg?.toFixed(3) || '.000'}</strong></td>
             <td><strong>{seasonData.homeRuns || 0}</strong></td>
@@ -72,6 +78,7 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
       <thead>
         <tr>
           {isCareer && <th>시즌</th>}
+          {isCareer && <th>팀</th>}
           <th>ERA</th>
           <th>W</th>
           <th>L</th>
@@ -83,23 +90,23 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
       </thead>
       <tbody>
         {isCareer ? (
-          // 시즌별 + 합계
           <>
             {seasonBySeasonStats && seasonBySeasonStats.map((season, index) => (
               <tr key={index}>
                 <td className="season-label">{season.season}</td>
-                <td>{season.era?.toFixed(2) || '0.00'}</td>
-                <td>{season.wins || 0}</td>
-                <td>{season.losses || 0}</td>
-                <td>{season.saves || 0}</td>
-                <td>{season.inningsPitched || 0}</td>
-                <td>{season.strikeouts || 0}</td>
-                <td>{season.whip?.toFixed(2) || '0.00'}</td>
+                <td className="team-badge">{season.team || '-'}</td>
+                <td>{season.era?.toFixed(2) ?? '-'}</td>
+                <td>{season.wins ?? '-'}</td>
+                <td>{season.losses ?? '-'}</td>
+                <td>{season.saves ?? '-'}</td>
+                <td>{season.inningsPitched ?? '-'}</td>
+                <td>{season.strikeouts ?? '-'}</td>
+                <td>{season.whip?.toFixed(2) ?? '-'}</td>
               </tr>
             ))}
-            {/* 통산 합계 */}
             <tr className="total-row">
-              <td className="season-label"><strong>통산 합계</strong></td>
+              <td className="season-label"><strong>통산</strong></td>
+              <td>-</td>
               <td><strong>{stats.era?.toFixed(2) || '0.00'}</strong></td>
               <td><strong>{stats.wins || 0}</strong></td>
               <td><strong>{stats.losses || 0}</strong></td>
@@ -110,7 +117,6 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
             </tr>
           </>
         ) : (
-          // 이번 시즌만
           <tr>
             <td><strong>{seasonData.era?.toFixed(2) || '0.00'}</strong></td>
             <td><strong>{seasonData.wins || 0}</strong></td>
@@ -167,8 +173,9 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
           className="stat-table-wrapper"
         >
           {activeTab === "current" ? (
-            // 이번 시즌 통계
-            currentSeasonStats ? (
+            statsLoading ? (
+              <div className="no-stats">기록을 불러오는 중...</div>
+            ) : currentSeasonStats ? (
               position === "DH / Pitcher" ? (
                 renderTwoWayStats(currentSeasonStats, false)
               ) : isPitcher ? (
@@ -180,7 +187,6 @@ export default function MLBStatTable({ stats, currentSeasonStats, seasonBySeason
               <div className="no-stats">이번 시즌 통계가 없습니다.</div>
             )
           ) : (
-            // 통산 기록
             stats ? (
               position === "DH / Pitcher" ? (
                 renderTwoWayStats(stats, true)

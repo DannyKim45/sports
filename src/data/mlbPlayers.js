@@ -78,14 +78,14 @@ export const mlbStarPlayers = [
       whip: 0.00
     },
     seasonBySeasonStats: [
-      { season: "2025", battingAvg: 0.282, homeRuns: 55, rbi: 102, stolenBases: 20, hits: 172, doubles: 25, triples: 9, era: 2.87, wins: 1, losses: 1, saves: 0, inningsPitched: 47, strikeouts: 62, whip: 1.04 },
-      { season: "2024", battingAvg: 0.31, homeRuns: 54, rbi: 130, stolenBases: 59, hits: 197, doubles: 38, triples: 7, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2023", battingAvg: 0.304, homeRuns: 44, rbi: 95, stolenBases: 20, hits: 151, doubles: 26, triples: 8, era: 3.14, wins: 10, losses: 5, saves: 0, inningsPitched: 132, strikeouts: 167, whip: 1.06 },
-      { season: "2022", battingAvg: 0.273, homeRuns: 34, rbi: 95, stolenBases: 11, hits: 160, doubles: 30, triples: 6, era: 2.33, wins: 15, losses: 9, saves: 0, inningsPitched: 166, strikeouts: 219, whip: 1.01 },
-      { season: "2021", battingAvg: 0.257, homeRuns: 46, rbi: 100, stolenBases: 26, hits: 138, doubles: 26, triples: 8, era: 3.18, wins: 9, losses: 2, saves: 0, inningsPitched: 130.1, strikeouts: 156, whip: 1.09 },
-      { season: "2020", battingAvg: 0.19, homeRuns: 7, rbi: 24, stolenBases: 7, hits: 29, doubles: 6, triples: 0, era: 37.8, wins: 0, losses: 1, saves: 0, inningsPitched: 1.2, strikeouts: 3, whip: 6.6 },
-      { season: "2019", battingAvg: 0.286, homeRuns: 18, rbi: 62, stolenBases: 12, hits: 110, doubles: 20, triples: 5, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2018", battingAvg: 0.285, homeRuns: 22, rbi: 61, stolenBases: 10, hits: 93, doubles: 21, triples: 2, era: 3.31, wins: 4, losses: 2, saves: 0, inningsPitched: 51.2, strikeouts: 63, whip: 1.16 }
+      { season: "2025", team: "LAD", battingAvg: 0.282, homeRuns: 55, rbi: 102, stolenBases: 20, hits: 172, doubles: 25, triples: 9, era: 2.87, wins: 1, losses: 1, saves: 0, inningsPitched: 47, strikeouts: 62, whip: 1.04 },
+      { season: "2024", team: "LAD", battingAvg: 0.31, homeRuns: 54, rbi: 130, stolenBases: 59, hits: 197, doubles: 38, triples: 7, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", team: "LAA", battingAvg: 0.304, homeRuns: 44, rbi: 95, stolenBases: 20, hits: 151, doubles: 26, triples: 8, era: 3.14, wins: 10, losses: 5, saves: 0, inningsPitched: 132, strikeouts: 167, whip: 1.06 },
+      { season: "2022", team: "LAA", battingAvg: 0.273, homeRuns: 34, rbi: 95, stolenBases: 11, hits: 160, doubles: 30, triples: 6, era: 2.33, wins: 15, losses: 9, saves: 0, inningsPitched: 166, strikeouts: 219, whip: 1.01 },
+      { season: "2021", team: "LAA", battingAvg: 0.257, homeRuns: 46, rbi: 100, stolenBases: 26, hits: 138, doubles: 26, triples: 8, era: 3.18, wins: 9, losses: 2, saves: 0, inningsPitched: 130.1, strikeouts: 156, whip: 1.09 },
+      { season: "2020", team: "LAA", battingAvg: 0.19, homeRuns: 7, rbi: 24, stolenBases: 7, hits: 29, doubles: 6, triples: 0, era: 37.8, wins: 0, losses: 1, saves: 0, inningsPitched: 1.2, strikeouts: 3, whip: 6.6 },
+      { season: "2019", team: "LAA", battingAvg: 0.286, homeRuns: 18, rbi: 62, stolenBases: 12, hits: 110, doubles: 20, triples: 5, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2018", team: "LAA", battingAvg: 0.285, homeRuns: 22, rbi: 61, stolenBases: 10, hits: 93, doubles: 21, triples: 2, era: 3.31, wins: 4, losses: 2, saves: 0, inningsPitched: 51.2, strikeouts: 63, whip: 1.16 }
     ],
     highlights: [
       {
@@ -157,16 +157,16 @@ export const mlbStarPlayers = [
       whip: null
     },
     seasonBySeasonStats: [
-      { season: "2025", battingAvg: 0.331, homeRuns: 53, rbi: 114, stolenBases: 12, hits: 179, doubles: 30, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2024", battingAvg: 0.322, homeRuns: 58, rbi: 144, stolenBases: 10, hits: 180, doubles: 36, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2023", battingAvg: 0.267, homeRuns: 37, rbi: 75, stolenBases: 3, hits: 98, doubles: 16, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2022", battingAvg: 0.311, homeRuns: 62, rbi: 131, stolenBases: 16, hits: 177, doubles: 28, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2021", battingAvg: 0.287, homeRuns: 39, rbi: 98, stolenBases: 6, hits: 158, doubles: 24, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2020", battingAvg: 0.257, homeRuns: 9, rbi: 22, stolenBases: 0, hits: 26, doubles: 3, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2019", battingAvg: 0.272, homeRuns: 27, rbi: 55, stolenBases: 3, hits: 103, doubles: 18, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2018", battingAvg: 0.278, homeRuns: 27, rbi: 67, stolenBases: 6, hits: 115, doubles: 22, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2017", battingAvg: 0.284, homeRuns: 52, rbi: 114, stolenBases: 9, hits: 154, doubles: 24, triples: 3, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2016", battingAvg: 0.179, homeRuns: 4, rbi: 10, stolenBases: 0, hits: 15, doubles: 2, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+      { season: "2025", team: "NYY", battingAvg: 0.331, homeRuns: 53, rbi: 114, stolenBases: 12, hits: 179, doubles: 30, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2024", team: "NYY", battingAvg: 0.322, homeRuns: 58, rbi: 144, stolenBases: 10, hits: 180, doubles: 36, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", team: "NYY", battingAvg: 0.267, homeRuns: 37, rbi: 75, stolenBases: 3, hits: 98, doubles: 16, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", team: "NYY", battingAvg: 0.311, homeRuns: 62, rbi: 131, stolenBases: 16, hits: 177, doubles: 28, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", team: "NYY", battingAvg: 0.287, homeRuns: 39, rbi: 98, stolenBases: 6, hits: 158, doubles: 24, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2020", team: "NYY", battingAvg: 0.257, homeRuns: 9, rbi: 22, stolenBases: 0, hits: 26, doubles: 3, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2019", team: "NYY", battingAvg: 0.272, homeRuns: 27, rbi: 55, stolenBases: 3, hits: 103, doubles: 18, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2018", team: "NYY", battingAvg: 0.278, homeRuns: 27, rbi: 67, stolenBases: 6, hits: 115, doubles: 22, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2017", team: "NYY", battingAvg: 0.284, homeRuns: 52, rbi: 114, stolenBases: 9, hits: 154, doubles: 24, triples: 3, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2016", team: "NYY", battingAvg: 0.179, homeRuns: 4, rbi: 10, stolenBases: 0, hits: 15, doubles: 2, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
     ],
     personalStories: [
       {
@@ -230,13 +230,13 @@ export const mlbStarPlayers = [
       whip: null
     },
     seasonBySeasonStats: [
-      { season: "2025", battingAvg: 0.292, homeRuns: 23, rbi: 84, stolenBases: 6, hits: 172, doubles: 34, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2024", battingAvg: 0.323, homeRuns: 30, rbi: 103, stolenBases: 2, hits: 199, doubles: 44, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2023", battingAvg: 0.264, homeRuns: 26, rbi: 94, stolenBases: 5, hits: 159, doubles: 30, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2022", battingAvg: 0.274, homeRuns: 32, rbi: 97, stolenBases: 8, hits: 175, doubles: 35, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2021", battingAvg: 0.311, homeRuns: 48, rbi: 111, stolenBases: 4, hits: 188, doubles: 29, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2020", battingAvg: 0.262, homeRuns: 9, rbi: 33, stolenBases: 1, hits: 58, doubles: 13, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2019", battingAvg: 0.272, homeRuns: 15, rbi: 69, stolenBases: 0, hits: 126, doubles: 26, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+      { season: "2025", team: "TOR", battingAvg: 0.292, homeRuns: 23, rbi: 84, stolenBases: 6, hits: 172, doubles: 34, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2024", team: "TOR", battingAvg: 0.323, homeRuns: 30, rbi: 103, stolenBases: 2, hits: 199, doubles: 44, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", team: "TOR", battingAvg: 0.264, homeRuns: 26, rbi: 94, stolenBases: 5, hits: 159, doubles: 30, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", team: "TOR", battingAvg: 0.274, homeRuns: 32, rbi: 97, stolenBases: 8, hits: 175, doubles: 35, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", team: "TOR", battingAvg: 0.311, homeRuns: 48, rbi: 111, stolenBases: 4, hits: 188, doubles: 29, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2020", team: "TOR", battingAvg: 0.262, homeRuns: 9, rbi: 33, stolenBases: 1, hits: 58, doubles: 13, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2019", team: "TOR", battingAvg: 0.272, homeRuns: 15, rbi: 69, stolenBases: 0, hits: 126, doubles: 26, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
     ],
     personalStories: [
       {
@@ -255,6 +255,7 @@ export const mlbStarPlayers = [
     position: "1B",
     number: 3,
     image: "/images/harper.jpg",
+    imagePosition: "center 15%",
     country: "USA",
     birthDate: "1992-10-16",
     height: "6'2\"",
@@ -301,20 +302,20 @@ export const mlbStarPlayers = [
       whip: null
     },
     seasonBySeasonStats: [
-      { season: "2025", battingAvg: 0.261, homeRuns: 27, rbi: 75, stolenBases: 12, hits: 131, doubles: 32, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2024", battingAvg: 0.285, homeRuns: 30, rbi: 87, stolenBases: 7, hits: 157, doubles: 42, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2023", battingAvg: 0.293, homeRuns: 21, rbi: 72, stolenBases: 11, hits: 134, doubles: 29, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2022", battingAvg: 0.286, homeRuns: 18, rbi: 65, stolenBases: 11, hits: 106, doubles: 28, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2021", battingAvg: 0.309, homeRuns: 35, rbi: 84, stolenBases: 13, hits: 151, doubles: 42, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2020", battingAvg: 0.268, homeRuns: 13, rbi: 33, stolenBases: 8, hits: 51, doubles: 9, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2019", battingAvg: 0.26, homeRuns: 35, rbi: 114, stolenBases: 15, hits: 149, doubles: 36, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2018", battingAvg: 0.249, homeRuns: 34, rbi: 100, stolenBases: 13, hits: 137, doubles: 34, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2017", battingAvg: 0.319, homeRuns: 29, rbi: 87, stolenBases: 4, hits: 134, doubles: 27, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2016", battingAvg: 0.243, homeRuns: 24, rbi: 86, stolenBases: 21, hits: 123, doubles: 24, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2015", battingAvg: 0.33, homeRuns: 42, rbi: 99, stolenBases: 6, hits: 172, doubles: 38, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2014", battingAvg: 0.273, homeRuns: 13, rbi: 32, stolenBases: 2, hits: 96, doubles: 10, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2013", battingAvg: 0.274, homeRuns: 20, rbi: 58, stolenBases: 11, hits: 116, doubles: 24, triples: 3, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2012", battingAvg: 0.27, homeRuns: 22, rbi: 59, stolenBases: 18, hits: 144, doubles: 26, triples: 9, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+      { season: "2025", team: "PHI", battingAvg: 0.261, homeRuns: 27, rbi: 75, stolenBases: 12, hits: 131, doubles: 32, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2024", team: "PHI", battingAvg: 0.285, homeRuns: 30, rbi: 87, stolenBases: 7, hits: 157, doubles: 42, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", team: "PHI", battingAvg: 0.293, homeRuns: 21, rbi: 72, stolenBases: 11, hits: 134, doubles: 29, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", team: "PHI", battingAvg: 0.286, homeRuns: 18, rbi: 65, stolenBases: 11, hits: 106, doubles: 28, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", team: "PHI", battingAvg: 0.309, homeRuns: 35, rbi: 84, stolenBases: 13, hits: 151, doubles: 42, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2020", team: "PHI", battingAvg: 0.268, homeRuns: 13, rbi: 33, stolenBases: 8, hits: 51, doubles: 9, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2019", team: "PHI", battingAvg: 0.26, homeRuns: 35, rbi: 114, stolenBases: 15, hits: 149, doubles: 36, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2018", team: "WSH", battingAvg: 0.249, homeRuns: 34, rbi: 100, stolenBases: 13, hits: 137, doubles: 34, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2017", team: "WSH", battingAvg: 0.319, homeRuns: 29, rbi: 87, stolenBases: 4, hits: 134, doubles: 27, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2016", team: "WSH", battingAvg: 0.243, homeRuns: 24, rbi: 86, stolenBases: 21, hits: 123, doubles: 24, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2015", team: "WSH", battingAvg: 0.33, homeRuns: 42, rbi: 99, stolenBases: 6, hits: 172, doubles: 38, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2014", team: "WSH", battingAvg: 0.273, homeRuns: 13, rbi: 32, stolenBases: 2, hits: 96, doubles: 10, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2013", team: "WSH", battingAvg: 0.274, homeRuns: 20, rbi: 58, stolenBases: 11, hits: 116, doubles: 24, triples: 3, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2012", team: "WSH", battingAvg: 0.27, homeRuns: 22, rbi: 59, stolenBases: 18, hits: 144, doubles: 26, triples: 9, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
     ],
     personalStories: [
       {
@@ -379,14 +380,15 @@ export const mlbStarPlayers = [
       whip: null
     },
     seasonBySeasonStats: [
-      { season: "2025", battingAvg: 0.263, homeRuns: 43, rbi: 105, stolenBases: 38, hits: 152, doubles: 20, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2024", battingAvg: 0.288, homeRuns: 41, rbi: 109, stolenBases: 7, hits: 166, doubles: 31, triples: 4, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2023", battingAvg: 0.275, homeRuns: 35, rbi: 109, stolenBases: 12, hits: 156, doubles: 32, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2022", battingAvg: 0.242, homeRuns: 27, rbi: 62, stolenBases: 6, hits: 127, doubles: 25, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2021", battingAvg: 0.313, homeRuns: 29, rbi: 95, stolenBases: 9, hits: 157, doubles: 20, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2020", battingAvg: 0.351, homeRuns: 13, rbi: 37, stolenBases: 6, hits: 54, doubles: 14, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2019", battingAvg: 0.282, homeRuns: 34, rbi: 110, stolenBases: 12, hits: 153, doubles: 32, triples: 5, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2018", battingAvg: 0.292, homeRuns: 22, rbi: 70, stolenBases: 5, hits: 121, doubles: 25, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+      { season: "2025", team: "NYM", battingAvg: 0.263, homeRuns: 43, rbi: 105, stolenBases: 38, hits: 152, doubles: 20, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2024", team: "NYY", battingAvg: 0.288, homeRuns: 41, rbi: 109, stolenBases: 7, hits: 166, doubles: 31, triples: 4, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", team: "NYY", battingAvg: 0.275, homeRuns: 35, rbi: 109, stolenBases: 12, hits: 156, doubles: 32, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", team: "WSH", battingAvg: 0.246, homeRuns: 19, rbi: 42, stolenBases: 3, hits: 84, doubles: 17, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", team: "SD", battingAvg: 0.236, homeRuns: 8, rbi: 20, stolenBases: 3, hits: 43, doubles: 8, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", team: "WSH", battingAvg: 0.313, homeRuns: 29, rbi: 95, stolenBases: 9, hits: 157, doubles: 20, triples: 2, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2020", team: "WSH", battingAvg: 0.351, homeRuns: 13, rbi: 37, stolenBases: 6, hits: 54, doubles: 14, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2019", team: "WSH", battingAvg: 0.282, homeRuns: 34, rbi: 110, stolenBases: 12, hits: 153, doubles: 32, triples: 5, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2018", team: "WSH", battingAvg: 0.292, homeRuns: 22, rbi: 70, stolenBases: 5, hits: 121, doubles: 25, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
     ],
     personalStories: [
       {
@@ -397,6 +399,232 @@ export const mlbStarPlayers = [
         title: "메츠와 역대급 계약",
         content: "2024-25 오프시즌 뉴욕 메츠와 15년 7억 6,500만 달러 계약을 체결하며 MLB 역사상 최대 규모의 계약을 맺었습니다. 같은 뉴욕의 라이벌 양키스를 떠나 메츠를 선택한 결정은 큰 화제가 되었습니다."
       }
+    ]
+  },
+  {
+    id: 7,
+    mlbId: 694973, // Official MLB player ID
+    name: "Paul Skenes",
+    nameKo: "폴 스킨스",
+    team: "Pittsburgh Pirates",
+    teamAbbrev: "PIT",
+    position: "SP",
+    number: 30,
+    image: "/images/skenes.jpg",
+    imagePosition: "center 15%",
+    country: "USA",
+    birthDate: "2002-05-29",
+    height: "6'6\"",
+    weight: "247 lbs",
+    bats: "Right",
+    throws: "Right",
+    description: "2024년 전체 1순위 드래프트 지명 후 루키 시즌 만에 NL 사이영상을 수상한 괴물 투수. 2점대 초반 ERA와 100마일을 넘는 패스트볼로 리그 최고의 선발 투수로 자리매김했습니다.",
+    personalStories: [
+      {
+        title: "전체 1순위에서 사이영상까지",
+        content: "2023년 드래프트 전체 1순위로 피츠버그 파이리츠에 지명된 뒤, 단 한 시즌 만인 2024년 NL 사이영상을 수상하며 역대급 루키 시즌을 보냈습니다. 대학 시절 LSU에서 에이스로 활약하며 대학 야구 역사상 가장 지배적인 투수 중 하나로 평가받았습니다."
+      },
+      {
+        title: "공군사관학교 출신 야구 선수",
+        content: "스킨스는 미국 공군사관학교(USAFA)에서 야구를 시작했습니다. 졸업 후 LSU로 편입하여 폭발적인 성장을 이뤘으며, 그의 군인 정신과 강인한 멘탈은 마운드 위에서도 그대로 드러납니다."
+      },
+      {
+        title: "올리비아 던과의 인연",
+        content: "LSU 시절 체조 선수 올리비아 던과 연인 관계로 화제가 되었으며, 두 사람은 미국 스포츠계에서 가장 주목받는 커플 중 하나가 되었습니다."
+      }
+    ],
+    achievements: [
+      "2024 NL Cy Young Award",
+      "2024 NL Rookie of the Year",
+      "2024 NL All-Star",
+      "2023 MLB Draft #1 Overall Pick",
+      "2023 College World Series Champion (LSU)"
+    ],
+    stats: {
+      battingAvg: null,
+      homeRuns: null,
+      rbi: null,
+      stolenBases: null,
+      hits: null,
+      doubles: null,
+      triples: null,
+      era: 1.97,
+      wins: 21,
+      losses: 13,
+      saves: 0,
+      inningsPitched: 276.0,
+      strikeouts: 386,
+      whip: 0.97
+    },
+    currentSeasonStats: {
+      battingAvg: null,
+      homeRuns: null,
+      rbi: null,
+      stolenBases: null,
+      hits: null,
+      doubles: null,
+      triples: null,
+      era: 0.00,
+      wins: 0,
+      losses: 0,
+      saves: 0,
+      inningsPitched: 0,
+      strikeouts: 0,
+      whip: 0.00
+    },
+    seasonBySeasonStats: [
+      { season: "2025", team: "PIT", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 1.97, wins: 10, losses: 10, saves: 0, inningsPitched: 155.0, strikeouts: 216, whip: 0.99 },
+      { season: "2024", team: "PIT", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 1.96, wins: 11, losses: 3, saves: 0, inningsPitched: 133.0, strikeouts: 170, whip: 0.95 }
+    ]
+  },
+  {
+    id: 8,
+    mlbId: 669373, // Official MLB player ID
+    name: "Tarik Skubal",
+    nameKo: "타릭 스쿠발",
+    team: "Detroit Tigers",
+    teamAbbrev: "DET",
+    position: "SP",
+    number: 29,
+    image: "/images/skubal.jpg",
+    imagePosition: "center 10%",
+    country: "USA",
+    birthDate: "1996-11-20",
+    height: "6'3\"",
+    weight: "215 lbs",
+    bats: "Right",
+    throws: "Left",
+    description: "디트로이트 타이거스의 에이스. 2024년 AL 사이영상을 수상하며 AL 최고의 선발 투수로 등극했습니다. 좌완 투수 특유의 날카로운 슬라이더와 커터 콤비네이션이 타자들을 압도합니다.",
+    personalStories: [
+      {
+        title: "팔꿈치 수술을 딛고 일어서다",
+        content: "2021년 토미 존 수술 후 많은 이들이 그의 미래를 의심했습니다. 하지만 스쿠발은 재활을 통해 더욱 강해졌고, 2024년 사이영상이라는 최고의 영예로 보답했습니다. 역경을 이겨낸 그의 이야기는 디트로이트 팬들에게 큰 감동을 주고 있습니다."
+      },
+      {
+        title: "타이거스 재건의 상징",
+        content: "디트로이트 타이거스의 오랜 재건 과정에서 스쿠발은 팀의 핵심 축으로 자리 잡았습니다. 그의 에이스다운 활약은 타이거스가 다시 경쟁력 있는 팀으로 돌아오는 데 큰 역할을 했습니다."
+      }
+    ],
+    achievements: [
+      "2024 AL Cy Young Award",
+      "2024 AL All-Star",
+      "2025 AL ERA 리더",
+      "2025 AL 탈삼진 리더"
+    ],
+    stats: {
+      battingAvg: null,
+      homeRuns: null,
+      rbi: null,
+      stolenBases: null,
+      hits: null,
+      doubles: null,
+      triples: null,
+      era: 3.08,
+      wins: 54,
+      losses: 37,
+      saves: 0,
+      inningsPitched: 582.2,
+      strikeouts: 889,
+      whip: 1.10
+    },
+    currentSeasonStats: {
+      battingAvg: null,
+      homeRuns: null,
+      rbi: null,
+      stolenBases: null,
+      hits: null,
+      doubles: null,
+      triples: null,
+      era: 0.00,
+      wins: 0,
+      losses: 0,
+      saves: 0,
+      inningsPitched: 0,
+      strikeouts: 0,
+      whip: 0.00
+    },
+    seasonBySeasonStats: [
+      { season: "2025", team: "DET", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 2.21, wins: 13, losses: 6, saves: 0, inningsPitched: 179.0, strikeouts: 241, whip: 0.89 },
+      { season: "2024", team: "DET", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 2.39, wins: 18, losses: 4, saves: 0, inningsPitched: 192.0, strikeouts: 228, whip: 0.92 },
+      { season: "2023", team: "DET", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 2.80, wins: 7, losses: 3, saves: 0, inningsPitched: 80.1, strikeouts: 102, whip: 1.01 },
+      { season: "2022", team: "DET", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 3.52, wins: 7, losses: 8, saves: 0, inningsPitched: 117.2, strikeouts: 117, whip: 1.18 },
+      { season: "2021", team: "DET", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 4.34, wins: 8, losses: 12, saves: 0, inningsPitched: 149.0, strikeouts: 164, whip: 1.32 },
+      { season: "2020", team: "DET", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 5.63, wins: 1, losses: 4, saves: 0, inningsPitched: 40.0, strikeouts: 37, whip: 1.55 }
+    ]
+  },
+  {
+    id: 9,
+    mlbId: 808967, // Official MLB player ID
+    name: "Yoshinobu Yamamoto",
+    nameKo: "요시노부 야마모토",
+    team: "Los Angeles Dodgers",
+    teamAbbrev: "LAD",
+    position: "SP",
+    number: 18,
+    image: "/images/yamamoto.jpg",
+    country: "Japan",
+    birthDate: "1998-08-17",
+    height: "5'11\"",
+    weight: "176 lbs",
+    bats: "Right",
+    throws: "Right",
+    description: "일본 프로야구 오릭스 버팔로스에서 최고의 투수로 군림한 뒤 다저스와 12년 3억 2,500만 달러의 역대 최고액 투수 계약을 체결했습니다. 패스트볼, 스플리터, 슬라이더를 완벽히 구사하는 일본 야구 역사상 최고의 투수로 평가받습니다.",
+    personalStories: [
+      {
+        title: "역대 최고액 투수 계약",
+        content: "2023-24 오프시즌 LA 다저스와 12년 3억 2,500만 달러 계약을 체결하며 야구 역사상 투수 최고액 계약을 기록했습니다. 오타니의 뒤를 이어 일본 야구의 위상을 다시 한번 드높였습니다."
+      },
+      {
+        title: "일본 야구의 완성형",
+        content: "오릭스 버팔로스 시절 NPB(일본프로야구) MVP를 3회 수상하고, 통산 ERA 1점대를 기록하며 일본 프로야구 역사상 가장 지배적인 투수 중 하나로 평가받았습니다. 5가지 이상의 구종을 마스터한 완성형 투수입니다."
+      },
+      {
+        title: "다저스에서의 첫 시즌, 부상을 딛고",
+        content: "2024년 다저스 첫 시즌 어깨 부상으로 일찍 이탈했지만, 2025년 완전히 회복하여 30경기 12승 2.49 ERA로 팀의 핵심 에이스로 자리매김했습니다."
+      }
+    ],
+    achievements: [
+      "2025 NL All-Star",
+      "역대 투수 최고액 계약 (12년 $3억 2,500만)",
+      "NPB MVP 3회 (2021, 2022, 2023)",
+      "NPB 사와무라상 3회",
+      "NPB 통산 ERA 1점대"
+    ],
+    stats: {
+      battingAvg: null,
+      homeRuns: null,
+      rbi: null,
+      stolenBases: null,
+      hits: null,
+      doubles: null,
+      triples: null,
+      era: 2.66,
+      wins: 19,
+      losses: 10,
+      saves: 0,
+      inningsPitched: 216.2,
+      strikeouts: 306,
+      whip: 1.05
+    },
+    currentSeasonStats: {
+      battingAvg: null,
+      homeRuns: null,
+      rbi: null,
+      stolenBases: null,
+      hits: null,
+      doubles: null,
+      triples: null,
+      era: 0.00,
+      wins: 0,
+      losses: 0,
+      saves: 0,
+      inningsPitched: 0,
+      strikeouts: 0,
+      whip: 0.00
+    },
+    seasonBySeasonStats: [
+      { season: "2025", team: "LAD", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 2.49, wins: 12, losses: 8, saves: 0, inningsPitched: 163.2, strikeouts: 201, whip: 1.08 },
+      { season: "2024", team: "LAD", battingAvg: null, homeRuns: null, rbi: null, stolenBases: null, hits: null, doubles: null, triples: null, era: 3.00, wins: 7, losses: 2, saves: 0, inningsPitched: 57.0, strikeouts: 105, whip: 1.00 }
     ]
   },
   {
@@ -454,11 +682,11 @@ export const mlbStarPlayers = [
       whip: null
     },
     seasonBySeasonStats: [
-      { season: "2025", battingAvg: 0.247, homeRuns: 60, rbi: 125, stolenBases: 14, hits: 147, doubles: 24, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2024", battingAvg: 0.22, homeRuns: 34, rbi: 100, stolenBases: 6, hits: 120, doubles: 16, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2023", battingAvg: 0.232, homeRuns: 30, rbi: 75, stolenBases: 0, hits: 119, doubles: 23, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2022", battingAvg: 0.211, homeRuns: 27, rbi: 63, stolenBases: 1, hits: 78, doubles: 20, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
-      { season: "2021", battingAvg: 0.18, homeRuns: 2, rbi: 13, stolenBases: 0, hits: 25, doubles: 12, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
+      { season: "2025", team: "SEA", battingAvg: 0.247, homeRuns: 60, rbi: 125, stolenBases: 14, hits: 147, doubles: 24, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2024", team: "SEA", battingAvg: 0.22, homeRuns: 34, rbi: 100, stolenBases: 6, hits: 120, doubles: 16, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2023", team: "SEA", battingAvg: 0.232, homeRuns: 30, rbi: 75, stolenBases: 0, hits: 119, doubles: 23, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2022", team: "SEA", battingAvg: 0.211, homeRuns: 27, rbi: 63, stolenBases: 1, hits: 78, doubles: 20, triples: 1, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null },
+      { season: "2021", team: "SEA", battingAvg: 0.18, homeRuns: 2, rbi: 13, stolenBases: 0, hits: 25, doubles: 12, triples: 0, era: null, wins: null, losses: null, saves: null, inningsPitched: null, strikeouts: null, whip: null }
     ],
     personalStories: [
       {

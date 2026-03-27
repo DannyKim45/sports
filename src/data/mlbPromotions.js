@@ -65,7 +65,7 @@ export const mlbPromotions = {
     teamName: "Texas Rangers"
   },
   HOU: {
-    url: "https://www.mlb.com/astros/tickets/promotions",
+    url: "https://www.mlb.com/astros/tickets/promotions/2026",
     teamName: "Houston Astros"
   },
   STL: {

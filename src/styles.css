@@ -725,7 +725,7 @@ body {
 
 /* Game Card */
 .game-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.13);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 24px;
@@ -734,7 +734,7 @@ body {
 }
 
 .game-card:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
@@ -802,6 +802,7 @@ body {
   width: 48px;
   height: 48px;
   object-fit: contain;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.56));
 }
 
 .team-details {
